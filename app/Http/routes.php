@@ -21,7 +21,7 @@ Route::group(['middlewareGroups' => ['web']], function(){
     });
     Route::get('/', function(){
           //return view('welcome');
-        return redirect('/courses/welcome');
+        return redirect('/index');
     });
 
 
