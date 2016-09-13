@@ -131,6 +131,11 @@ header.mobile_open #main_nav ul{
 }
 
 
+#cases .message_wrapper {
+    padding-top: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em
+}
 
 #body #news .list{
     padding: 0 4%;
@@ -202,6 +207,7 @@ header.mobile_open #main_nav ul{
     list-style-type: none;
 }
 
+
 #contact .email img, #contact .wechat img {
     width: 120px;
     margin-bottom: 1em
@@ -213,6 +219,13 @@ html {
 
 body:after {
     content: "small"
+}
+
+#cases .slides .wrapper img{
+    margin-bottom: 1em;
+    width: 180px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media all and (max-width: 24em){
@@ -291,10 +304,6 @@ body:after {
         margin: 0;
     }
 
-    #cases .slides .wrapper img{
-        margin-bottom: 1em;
-    }
-
     .flex-direction-nav .flex-prev {
         opacity: 1;
         left: 10px;
@@ -323,18 +332,7 @@ body:after {
 }
 
 @media all and (min-width: 48em) {
-    #cases .message_wrapper {
-        background-size: auto;
-        padding-top: 1.5em;
-        padding-left: 2em;
-        padding-right: 2em
-    }
 
-
-    #cases .slides .wrapper img{
-        float: left;
-        margin-right: 1em;
-    }
 
     #partners .team ul {
         max-width: 100%
@@ -410,7 +408,6 @@ body:after {
     #body .section .content,#body section .content {
         padding-top: 3em;
         padding-bottom: 3em;
-        padding:0 4%
     }
 
     .lang{
@@ -455,12 +452,24 @@ body:after {
 }
 
 @media all and (min-width: 60em){
+
+    #cases .content{
+        max-width: 960px;
+    }
+
+    #cases .slides .wrapper img{
+        float: left;
+        width: 200px;
+        margin-right: 1em;
+    }
+
     #cases .slides .wrapper .message_wrapper {
         float: left;
-        width: 75%;
+        width: 65%;
         vertical-align: middle;
         font-size: 1.1em;
-        padding-top: 0;
+        padding: 0;
+        background-size: auto;
     }
 
     .flex-direction-nav .flex-prev {
@@ -622,7 +631,7 @@ body:after {
     }
 
     #cases .content{
-        max-width: 600px;
+        max-width: 960px;
     }
 
     #cases .flex-control-nav li{
@@ -648,8 +657,9 @@ body:after {
     }
 
     #body #cases .content{
-        max-width: 800px;
+        max-width: 1200px;
     }
+
 
     #hero img {
         width: 280px;

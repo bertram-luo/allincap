@@ -714,9 +714,7 @@ a {
   position: static;
   top: initial;
   -webkit-transform: none;
-  transform: none;
-  display: table-cell;
-  vertical-align: middle; }
+  transform: none; }
 
 #cases .slides li {
   margin: 0 auto; }
