@@ -1,0 +1,28 @@
+#floating {
+    position:fixed;
+    right:0px;
+    top:30%;
+    z-index: 9999;
+}
+#floating > div{
+    display: block;
+    width: 50px;
+    height:50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+#floating > div:hover{
+    cursor: pointer;
+}
+#floating > div#phone{
+    background-color: #000e67;
+    background-image:url('/assets/images/phone000e67.png');
+}
+#floating > div#location{
+    background-color: #01aaff;
+    background-image:url('/assets/images/location01aaff.png');
+}
+#floating > div#share{
+    background-color: #7cba00;
+    background-image:url('/assets/images/share7cba00.png');
+}
