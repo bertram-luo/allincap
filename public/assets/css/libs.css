@@ -939,22 +939,6 @@ body.stop-scrolling {
     font-style: normal;
 }
 
-#body section > .content, #body .section > .content{
-    position: relative;
-    margin: 0 auto;
-    padding: 0 5%;
-}
-
-#body section .inner{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#body .section .inner, #body section .inner{
-    padding: 0 5%;
-}
-
 header {
     height: 56px;
 }
@@ -1080,10 +1064,6 @@ header.mobile_open #main_nav ul{
 }
 
 
-#body #news .content{
-    padding-top: 84px;
-    padding-bottom: 5em;
-}
 
 #body #news .list{
     padding: 0 4%;
@@ -1185,9 +1165,6 @@ body:after {
         width: 8em;
     }
 
-    #partners.section .content{
-        padding: 84px 5% 10px 5%;
-    }
 
     #partners .inner .hr{
         width: 100%;

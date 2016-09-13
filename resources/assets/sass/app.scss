@@ -663,6 +663,24 @@ a {
     font-size: 2em;
 }
 
+#body section > .content, #body .section > .content{
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 84px 5%;
+}
+
+#body section .inner, #body .section .inner{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 5%;
+}
+
+#body section#hero > .content , #body section#whoami > .content{
+    padding:0;
+}
+
 #hero {
     position: relative;
     text-align: center;
@@ -673,9 +691,6 @@ a {
 }
 
 #hero .inner {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 999;
     width: 100%;
     margin: 0
@@ -732,20 +747,13 @@ a {
     max-width: 1200px;
 }
 
-#whoami > .content{
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-}
-
 #whoami  div#inner{
-    display:table-cell;
-    vertical-align: middle;
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
     color: #FFF;
     text-shadow: 0px 1px 17.64px rgba(6, 0, 1, 0.996);
+
 }
 
 #whoami  div#inner > h1 {
@@ -829,16 +837,22 @@ a {
     padding: 0 .5em;
 }
 
+
 #cases {
     background-color: rgb(2, 20, 101);
 }
 
-#body #cases .content{
+#body #cases > .content {
+    position: static;
+    overflow: show;
     padding-top: 3em;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
 
-#cases .inner{
+#body #cases  .inner{
+    position: static;
+    top: initial;
+    transform: none;
     display: table-cell;
     vertical-align: middle;
 }
@@ -919,10 +933,6 @@ a {
     background-color: rgb(30, 172, 252);
     text-align: left;
     color: #FFF;
-}
-
-#body section#news > .content, #body .section#news > .content{
-    display: block;
 }
 
 #news h2 {

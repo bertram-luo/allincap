@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="body" class="scrollable">
-    <section  id="hero" style="text-align:center;" class="section">
+    <section  id="hero" class="section">
 
         <div class="inner" style="">
             <img src="/assets/images/biglogo.png"></image>
@@ -13,7 +13,7 @@
      </section>
     <section id="whoami" class="section">
         <div class="content">
-            <div id="inner">
+            <div class="inner" id="inner">
                 <h1>我们从哪里来</h1>
                 <p>在未来的金融世界将有我们的一席之地</p>
                 <h1>我们将去往何方</h1>
