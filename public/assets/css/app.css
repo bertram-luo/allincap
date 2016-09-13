@@ -715,13 +715,16 @@ a {
 #cases {
   background-color: #021465; }
 
-#body #cases > .content {
+#body #cases > .content, #body #partners > .content {
   position: static;
   overflow: show;
   padding-top: 3em;
   padding-bottom: 3em; }
 
-#body #cases .inner {
+#body #partners > .content {
+  padding-top: 5em; }
+
+#body #cases .inner, #body #partners .inner {
   position: static;
   top: initial;
   -webkit-transform: none;
