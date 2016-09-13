@@ -202,7 +202,7 @@
     <section id="contact" class="section">
         <div class="content">
         <div class="inner">
-            <h2>联系我们</h2>
+            <div style="min-width: 20em"><h2>联系我们</h2></div>
             <div class="contact">
                 <figure  class="wechat">
                     <img src="/assets/images/weixin.png" alt="">
