@@ -8,7 +8,8 @@
             <img src="/assets/images/biglogo.png"></image>
         </div>
         <div id="arrow" style="font-size: 18px;position:absolute; width: 100%; top:86%;"> <a href="#whoami">揭开奥银的面纱</a> </div>
-        <div class="bg" >
+        <div class="bg-box">
+            <div class="bg" src="/assets/images/hero_normal.jpg"> </div>
         </div>
      </section>
     <section id="whoami" class="section">

@@ -1499,7 +1499,7 @@ body:after {
     }
 
     #hero .bg {
-        background-image: url("/assets/images/hero_normal.jpg");
+        /*background-image: url("/assets/images/hero_normal.jpg");*/
     }
 
 
@@ -1556,7 +1556,7 @@ body:after {
         padding-bottom: 3em;
     }
     #hero .bg {
-        background-image:url(../img/hero_bg_standard@2x.jpg);
+        /*background-image:url(../img/hero_bg_standard@2x.jpg);*/
         background-attachment: fixed;
     }
 

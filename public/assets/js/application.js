@@ -5,8 +5,8 @@ $(document).ready(function(){
         ($(".section > .content")).css("min-height",m),
         $("#hero .bg").height(m);
     }
-    function e(o){
-        (o >= 0.5 * m  && o < m + $("#whoami").height()) ? $("header.change").addClass("white-logo") : $("header.change").removeClass("white-logo"),o >= (m + $("#whoami").height()) ? $("header.change").addClass("fixed") : $("header.change").removeClass("fixed")
+    function setNav(o){
+        (o >= 0.5 * m  && o < m + $("#whoami").height()) ? $("header.change").addClass("white-logo") : $("header.change").removeClass("white-logo"),o >= (m + $("#whoami").height()) ? $("header.change").addClass("fixed") : $("header.change").removeClass("fixed");
     }
     function n(){
        $("#slider.flexslider").flexslider({ 
@@ -75,15 +75,28 @@ $(document).ready(function(){
         })
     }
     function a(){
-        
+        $(window).scroll(function() {
+            var o = $(window).scrollTop();
+            n = o / m
+               ,e = n * 20;
 
-
-
-
-
-
-
-
+           if (o <= m) {
+                $("#hero .bg-box").css({"position":"fixed", "top": "0px"});
+               if (o < 0.1 * m){
+                    $("#hero .bg").css({"filter": "initial"});
+               } else {
+                    $("#hero .bg").css({"filter": "blur(" + e + "px)"});
+               }
+           } else {
+               var tmp = m + "px";
+               $("#hero .bg").css({"filter": "blur(20px)"});
+               $("#hero .bg-box").css({ "position": "absolute"});
+               $("#hero .bg-box").css({"top": tmp});
+               if (o > (m + m)){
+                    $("#hero .bg").css({"filter": "initial"});
+               }
+           }
+        })
     }
 
 
@@ -150,7 +163,7 @@ $(document).ready(function(){
 modal_body = $("popup_pp .modal-body"),
     $(window).scroll(function(){
         var o = $(window).scrollTop();
-        e(o);
+        setNav(o);
     });
 
 
@@ -226,20 +239,20 @@ modal_body = $("popup_pp .modal-body"),
     var b = [{
         context: "small",
         match: function(){
-            e($(window).scrollTop()),
+            setNav($(window).scrollTop()),
+            a(),
             r(),
             n(),
             d()
         },
         unmatch: function(){
             f(),
-            i(),
-            a()
+            i()
         }
     }, {
         context: "standard",
         match: function(){
-            e($(window).scrollTop()) ,
+            setNav($(window).scrollTop()) ,
             i(),
             a(),
             f()

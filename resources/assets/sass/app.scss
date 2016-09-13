@@ -686,7 +686,6 @@ a {
     text-align: center;
     color: #fff;
     padding: 0;
-    background-color: #1c1d21
 }
 
 #hero .inner {
@@ -705,15 +704,33 @@ a {
     top: 80%
 }
 
-#hero .bg {
+#hero .bg-box {
     position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
     min-height: 100%;
+    overflow:hidden;
+    ////background: url("/assets/images/hero_normal.jpg") center center no-repeat;
+    //background-size: cover;
+    z-index: 0;
+}
+
+
+#hero .bg {
+    position: relative;
+    top: -30px;
+    left: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% + 60px) !important;
+    min-height: 100%;
     background: url("/assets/images/hero_normal.jpg") center center no-repeat;
     background-size: cover;
-    z-index: 0;
+    z-index: -1;
+}
+
+#body{
+    background-color: #FFF;
 }
 
 #arrow {
