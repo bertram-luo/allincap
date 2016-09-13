@@ -578,12 +578,9 @@ body:after {
         font-size: 36px;
     }
 
-    #body .section#contact .content{
-        width:800px;
-    }
-
-    #contact .inner{
-        max-width: 600px;
+    #body .section#contact .content, #body .section#contact .inner{
+        max-width:800px;
+        min-width: 40em;
     }
 
     #contact .inner h2{
