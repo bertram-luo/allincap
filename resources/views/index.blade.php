@@ -111,7 +111,7 @@
             </div>
             <div id="slider" class="flexslider">
             <ul class="slides">
-                <li data-thumb="http://localhost:8000/assets/images/case1-thumbnail.jpg">
+                <li data-thumb="/assets/images/case1-thumbnail.jpg">
                     <div class="wrapper">
                         <img class="avatar" src="/assets/images/case1.jpg" alt="">
                         <div class="message_wrapper">
@@ -123,7 +123,7 @@
                         </div>
                     </div>
                 </li>
-                <li data-thumb="http://localhost:8000/assets/images/case2-thumbnail.jpg">
+                <li data-thumb="/assets/images/case2-thumbnail.jpg">
                     <div class="wrapper">
                         <img class="avatar" src="/assets/images/case1.jpg" alt="">
                         <div class="message_wrapper">
