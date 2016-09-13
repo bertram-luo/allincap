@@ -560,9 +560,8 @@ a {
 #body section .inner, #body .section .inner {
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
   padding: 0 5%; }
 
 #body section#hero > .content, #body section#whoami > .content {
@@ -573,7 +572,6 @@ a {
   text-align: center;
   color: #fff;
   padding: 0;
-  overflow: hidden;
   background-color: #1c1d21; }
 
 #hero .inner {
@@ -590,14 +588,14 @@ a {
   top: 80%; }
 
 #hero .bg {
+  position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
   min-height: 100%;
   background: url("/assets/images/hero_normal.jpg") center center no-repeat;
   background-size: cover;
-  z-index: 0;
-  position: absolute; }
+  z-index: 0; }
 
 #arrow {
   position: absolute;
@@ -618,10 +616,10 @@ a {
 #arrow a:hover {
   padding-bottom: 30px; }
 
-#whoami {
-  background: url("/assets/images/whoami_normal.jpg") center center;
-  background-size: cover; }
-
+/*#whoami{
+    background: url('/assets/images/whoami_normal.jpg') center center;
+    background-size: cover;
+}*/
 #whoami > .content {
   max-width: 1200px; }
 
@@ -813,7 +811,10 @@ a {
   text-align: center;
   color: #FFF; }
 
-#contact .inner {
+#body #contact .inner {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   max-width: 600px;
   margin: 0 auto; }
 

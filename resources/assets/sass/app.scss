@@ -673,8 +673,7 @@ a {
 #body section .inner, #body .section .inner{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     padding: 0 5%;
 }
 
@@ -687,7 +686,6 @@ a {
     text-align: center;
     color: #fff;
     padding: 0;
-    overflow: hidden;
     background-color: #1c1d21
 }
 
@@ -708,6 +706,7 @@ a {
 }
 
 #hero .bg {
+    position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
@@ -715,7 +714,6 @@ a {
     background: url("/assets/images/hero_normal.jpg") center center no-repeat;
     background-size: cover;
     z-index: 0;
-    position: absolute;
 }
 
 #arrow {
@@ -739,10 +737,10 @@ a {
     padding-bottom: 30px
 }
 
-#whoami{
+/*#whoami{
     background: url('/assets/images/whoami_normal.jpg') center center;
     background-size: cover;
-}
+}*/
 
 #whoami > .content{
     max-width: 1200px;
@@ -969,7 +967,9 @@ a {
     color: #FFF;
 }
 
-#contact .inner{
+#body #contact .inner{
+    left: 50%;
+    transform: translate(-50%, -50%);
     max-width: 600px;
     margin: 0 auto;
 }

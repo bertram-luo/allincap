@@ -118,9 +118,9 @@ header.mobile_open #main_nav ul{
     background-image: url(/assets/images/hero_small.jpg);
 }
 
-#whoami{
+/*#whoami{
     background-image: url('/assets/images/whoami_small.jpg');
-}
+}*/
 
 #whoami div#inner > h1{
     font-size: 2.2em;
@@ -423,9 +423,9 @@ body:after {
     }
 
 
-    #whoami{
+    /*#whoami{
         background: url('/assets/images/whoami_normal.jpg') center center;
-    }
+    }*/
 
     #whoami > .content{
         max-width: 960px;
