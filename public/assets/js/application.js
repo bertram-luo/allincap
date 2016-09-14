@@ -75,25 +75,39 @@ $(document).ready(function(){
         })
     }
     function a(){
+
+        var lastRadius = 0;
+        var lastPosition = "";
+        var lastFilter = "";
         $(window).scroll(function() {
             var o = $(window).scrollTop();
             n = o / m
                ,e = n * 20;
 
            if (o <= m) {
-                $("#hero .bg-box").css({"position":"fixed", "top": "0px"});
+               if (lastPosition != "fixed"){
+                   lastPosition = "fixed";
+                   $("#hero .bg-box").css({"position":"fixed", "top": "0px"});
+               }
                if (o < 0.1 * m){
-                    $("#hero .bg").css({"filter": "initial"});
+                   if (lastRadius != 0){
+                       lastRadius = 0
+                       $("#hero .bg").css({"filter": "initial"});
+                   }
                } else {
-                    $("#hero .bg").css({"filter": "blur(" + e + "px)"});
+                   if (lastRadius != parseInt(e)){
+                        lastRadius = parseInt(e);
+                        $("#hero .bg").css({"filter": "blur(" + e + "px)"});
+                   }
                }
            } else {
-               var tmp = m + "px";
-               $("#hero .bg").css({"filter": "blur(20px)"});
-               $("#hero .bg-box").css({ "position": "absolute"});
-               $("#hero .bg-box").css({"top": tmp});
-               if (o > (m + m)){
-                    $("#hero .bg").css({"filter": "initial"});
+               if (lastRadius != 20){
+                   lastRadius = 20;
+                   $("#hero .bg").css({"filter": "blur(20px)"});
+               }
+               if (lastPosition != "absolute"){
+                   lastPosition = "absolute";
+                   $("#hero .bg-box").css({ "position": "absolute", "top": m + "px"});
                }
            }
         })
