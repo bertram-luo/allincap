@@ -82,7 +82,7 @@ $(document).ready(function(){
         $(window).scroll(function() {
             var o = $(window).scrollTop();
             n = o / m
-               ,e = n * 20;
+               ,e = n * 10;
 
            if (o <= m) {
                if (lastPosition != "fixed"){
@@ -97,7 +97,7 @@ $(document).ready(function(){
                } else {
                    if (lastRadius != parseInt(e)){
                         lastRadius = parseInt(e);
-                        $("#hero .bg").css({"filter": "blur(" + e + "px)"});
+                        $("#hero .bg").css({"filter": "blur(" + 2 * lastRadius + "px)"});
                    }
                }
            } else {
