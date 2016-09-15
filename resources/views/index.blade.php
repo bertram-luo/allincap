@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.fe')
 
 @section('content')
 <div id="body" class="scrollable">

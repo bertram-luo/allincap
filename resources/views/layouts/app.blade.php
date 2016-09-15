@@ -2,70 +2,113 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=3, user-scalable=no">
-        <title>奥银资本 Allin Captical</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
 
+        <title>Allin Cap Administration Backend</title>
         <!--<link rel="stylesheet" href="bootstrap.min.css">-->
 
-        <!--<link href="/assets/css/dashboard.css" rel="stylesheet">-->
-        <link href="{{ elixir('assets/css/app.css') }}" rel="stylesheet">
+        <link href="{{ elixir('assets/css/be-main.css') }}" rel="stylesheet">
+        <link href="/assets/css/dashboard.css" rel="stylesheet">
         <link href="/assets/css/libs.css" rel="stylesheet">
-        <!--<link href="/assets/css/responsive.css" rel="stylesheet">-->
         {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
-        <script src="/assets/js/modernizr-2.6.2.min.js"></script>
         <!--<link rel="stylesheet" href="styles.css">-->
+        <style>
+            p
+            {
+                font-size: 1.5em;
+            }
+        </style>
     </head>
-    <body class="page home page_loading">
-        <div id="wrapper" class="scrollable">
-        <header class="change ch">
-            <div id="menu_control">
-                <div class="open">
-                    <i class="bar top"></i>
-                    <i class="bar mid"></i>
-                    <i class="bar bottom"></i>
+    <body data-spy="scroll" data-target="#myScrollspy" style="position: relative;" >
+        <a name="top"></a>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Face Demo</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" >
+                            @if(isset($links))
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">courses</a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                @foreach($links as $link)
+                                    <li class="divider"></li>
+                                    @foreach($link as $li)
+                                    <li class={{ $li['active'] }}><a href={{ $li['link']}}>{{ $li['name'] }}</a></li>
+                                    @endforeach
+                                @endforeach
+                            </ul>
+                        </li>
+                            @endif
+                        <li><a href="/facedetect">demo</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Charts</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/charts/lineChart">line chart</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Flyers</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/flyers/home">flyers</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">R talk</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/designpatterns">design patters</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                    <!-- Authentication Links -->
+                    @if (Auth::guest())
+                        <li><a href="{{ url('/login') }}">Login</a></li>
+                        <li><a href="{{ url('/register') }}">Register</a></li>
+                    @else
+                        <li><a href="/tasks">tasks</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Hello, {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                            </ul>
+                        </li>
+                    @endif
+                </ul>
                 </div>
             </div>
-
-            <div class="logo nav" id="logo_nav">
-                <a href="#body">
-                    <img src="/assets/images/logo-color.png">  </img>
-                </a>
-            </div>
-            <nav id="main_nav">
-                <ul class="">
-                    <li><a href="#whoami">关于我们</a></li>
-                    <li><a href="#partners">核心团队</a></li>
-                    <li><a href="#cases">投资案例</a></li>
-                    <li><a href="#news">最新动态</a></li>
-                    <li><a href="#contact">联系我们</a></li>
-                </ul>
-            </nav>
-            <div class="lang">
-                <a href="">ENGLISH</a>
-            </div>
-        </header>
+        </nav>
 
         @yield('content')
-        </div>
-        <div id="floating" style="">
-            <div id="phone"><a href="#contact"> </a></div>
-            <div id="location"><a href="#contact"> </a></div>
-            <div id="share"><a href="#contact"></a></div>
-        </div>
         <script src="/assets/js/jquery.min.js"></script>
-        <script src="/assets/js/onmediaquery.min.js"></script>
-        <!--<script src="/assets/js/jquery.flexslider.min.js"></script>-->
-        <script src="/assets/js/jquery.flexslider.master.js"></script>
-        <script src="/assets/js/jquery.scrollTo.min.js"></script>
-        <!--<script src="/assets/js/bootstrap.min.js"></script>-->
-        <!--<script src="{{ elixir('assets/js/libs.js') }}"></script>-->
-        <script src="/assets/js/jquery.waypoints.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
         <script src="/assets/js/application.js"></script>
+        <script src="{{ elixir('assets/js/libs.js') }}"></script>
         @yield('scripts.footer')
     </body>
 </html>
