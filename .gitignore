@@ -10,6 +10,7 @@ Homestead.json
 /public/build
 /public/uploads
 /public/photos/flyers/*
+/public/photos/news/*
 /public/photos/facedetect/*
 /public/log
 *.swp

@@ -17,13 +17,14 @@ class UeditorController extends Controller{
         //header('Access-Control-Allow-Headers: X-Requested-With,X_Requested_With'); //设置允许的跨域header
     }
     public function index(){
-    
-        date_default_timezone_set("Asia/chongqing");
+        file_put_contents("uelog","fuck you bitch", FILE_APPEND);
+        file_put_contents("uelog", file_get_contents(realpath(__DIR__."/config.json")), FILE_APPEND);
+        date_default_timezone_set("Asia/Chongqing");
         error_reporting(E_ERROR);
         header("Content-Type: text/html; charset=utf-8");
 
-        $CONFIG = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents(__DIR__."/config.json")), true);
-        file_put_contents("uelog", file_get_contents(__DIR__."/config.json"), FILE_APPEND);
+        $CONFIG = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents(realpath(__DIR__."/config.json"))), true);
+        file_put_contents("uelog", file_get_contents(realpath(__DIR__."/config.json")), FILE_APPEND);
         file_put_contents("uelog","fuck you bitch", FILE_APPEND);
         $action = $_GET['action'];
         file_put_contents("uelog", "\n".$action, FILE_APPEND);
