@@ -38,12 +38,12 @@ Route::group(['middlewareGroups' => ['web']], function(){
     Route::post('/task', 'TaskController@store');
     Route::delete('/task/{task}', 'TaskController@destroy');
 
-    Route::get('/charts/lineChart', 'ChartsController@lineChart');
     Route::get('/facedetect', 'FaceDetectController@index');
     Route::post('/facedetect/process', 'FaceDetectController@process');
 
     Route::get('flyers/home', 'FlyersController@index');
     Route::resource('flyers', 'FlyersController');
+    Route::resource('news', 'NewsController');
     Route::get('{zip}/{street}', 'FlyersController@show');
     //Route::post('{zip}/{street}/photos', ['as' => 'store_photo_path', 'uses' => 'FlyersController@addPhoto']);
     Route::post('{zip}/{street}/photos', ['as' => 'store_photo_path', 'uses' => 'PhotosController@store']);

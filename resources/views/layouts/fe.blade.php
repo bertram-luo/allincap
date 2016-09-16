@@ -65,7 +65,7 @@
         <!--<script src="/assets/js/bootstrap.min.js"></script>-->
         <!--<script src="{{ elixir('assets/js/libs.js') }}"></script>-->
         <script src="/assets/js/jquery.waypoints.min.js"></script>
-        <script src="/assets/js/application.js"></script>
+        <script src="/assets/js/fe-main.js"></script>
         @yield('scripts.footer')
     </body>
 </html>

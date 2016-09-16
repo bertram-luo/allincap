@@ -1,9 +1,19 @@
 $(document).ready(function(){
     function o(){
-        m > 400 && 1e3 > m && ($("#hero")).height(m),
-        ($(".section")).css("min-height",m),
-        ($(".section > .content")).css("min-height",m),
+        ($("#hero")).height(m);
         $("#hero .bg").height(m);
+        if (m > 400 && 1e3 > m) {
+            ($(".section")).css("min-height",m);
+            ($(".section > .content")).css("min-height",m);
+        } else {
+            $("#whoami") .css("min-height", m);
+            $("#whoami > .content").css("min-height", m);
+            $("#news") .css("min-height", m);
+            $("#news > .content").css("min-height", m);
+            $("#contact") .css("min-height", m);
+            $("#contact> .content").css("min-height", m);
+        }
+        
     }
     function setNav(o){
         (o >= 0.5 * m  && o < m + $("#whoami").height()) ? $("header.change").addClass("white-logo") : $("header.change").removeClass("white-logo"),o >= (m + $("#whoami").height()) ? $("header.change").addClass("fixed") : $("header.change").removeClass("fixed");

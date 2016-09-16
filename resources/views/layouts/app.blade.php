@@ -107,7 +107,7 @@
         @yield('content')
         <script src="/assets/js/jquery.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
-        <script src="/assets/js/application.js"></script>
+        <!--<script src="/assets/js/application.js"></script>-->
         <script src="{{ elixir('assets/js/libs.js') }}"></script>
         @yield('scripts.footer')
     </body>
