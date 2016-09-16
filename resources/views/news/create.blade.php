@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    {!!csrf_field() !!}
 <div style="width: 800px; margin: 0 auto;">
 <div>
     <h1>完整demo</h1>
@@ -46,12 +47,14 @@
     <script type="text/javascript" charset="utf-8" src="/assets/ueditor/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="/assets/ueditor/ueditor.all.min.js"> </script>
     <script type="text/javascript" charset="utf-8" src="/assets/ueditor/lang/zh-cn/zh-cn.js"></script>
-<script type="text/javascript">
+    <script type="text/javascript">
 
     //实例化编辑器
     //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
     var ue = UE.getEditor('editor');
-
+    ue.ready(function(){
+        ue.execCommand('serverparam', '_token', $('input[name=_token]').val()) ;//此处为支持laravel5 csrf ,根据实际情况修改,目的就是设置 _token 值.    
+    });
 
     function isFocus(e){
         alert(UE.getEditor('editor').isFocus());
@@ -160,4 +163,5 @@ console.log(UE.getEditor('editor').getAllHtml());
         alert("已清空草稿箱")
     }
 </script>
+    <!--<script type="text/javascript" charset="utf-8" src="/assets/js/csrf.config.js">-->
 @endsection

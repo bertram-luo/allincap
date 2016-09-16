@@ -23,6 +23,7 @@
                 font-size: 1.5em;
             }
         </style>
+        <script src="/assets/js/jquery.min.js"></script>
     </head>
     <body data-spy="scroll" data-target="#myScrollspy" style="position: relative;" >
         <a name="top"></a>
@@ -105,7 +106,6 @@
         </nav>
 
         @yield('content')
-        <script src="/assets/js/jquery.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
         <!--<script src="/assets/js/application.js"></script>-->
         <script src="{{ elixir('assets/js/libs.js') }}"></script>
