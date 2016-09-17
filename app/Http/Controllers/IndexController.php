@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use App\News;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -24,6 +25,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('index');
+        
+        return view('index', ['news' => News::top()]);
     }
 }

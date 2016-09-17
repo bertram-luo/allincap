@@ -7,6 +7,10 @@ function flash($title = null, $message = null){
     return $flash->info($title, $message);
 }
 
+function get_date($time){
+    return substr($time, 0, 10);
+}
+
 function flyer_path(App\Flyer $flyer){
     return $flyer->zip.'/'.str_replace(' ', '-', $flyer->street);
 }

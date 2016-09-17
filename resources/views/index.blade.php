@@ -178,21 +178,11 @@
             <div class="list">
                 <h2>最新动态</h2>
                 <ul class="news_list">
+                    @foreach($news as $new)
                     <li>
-                        <div class="time" > 2016.8.14</div><div class="abstract"> 与百度度合作创投市值第度合作创投市值第一一合作创投市值第一</div>
+                    <div class="time" > {{ get_date($new->created_at) }} </div><div class="abstract"> {{$new->title}}</div>
                     </li>
-                    <li>
-                        <div class="time" > 2016.8.14</div><div class="abstract"> 与百度合作创投市值第一</div>
-                    </li>
-                    <li>
-                        <div class="time" > 2016.8.14</div><div class="abstract"> 与百度合作创投市值第一</div>
-                    </li>
-                    <li>
-                        <div class="time" > 2016.8.14</div><div class="abstract"> 与百度合作创投市值第一</div>
-                    </li>
-                    <li>
-                        <div class="time" > 2016.8.14</div><div class="abstract"> 与百度合作创投市值第一</div>
-                    </li>
+                    @endforeach
                 </ul>
                 <button>  more </button>
             </div>
