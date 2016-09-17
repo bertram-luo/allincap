@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use App\Http\Requests\NewsRequest;
 use Illuminate\Http\Request;
 use App\News;
@@ -13,10 +14,10 @@ class NewsController extends Controller
     public function __construct(){
         parent::__construct();
         $this->middleware('auth', ['except' => 'show']);
-        
+
     }
     public function index(){
-       return view('pages.home'); 
+        return view('pages.home'); 
     }
     public function create(){
         return view('news.create');
@@ -30,6 +31,19 @@ class NewsController extends Controller
     }
     public function show($id){
         //$flyer = Flyer::locatedAt($zip, $street);
-        return view("news.show", compact('flyer'));
+        //
+        //
+
+        $news = DB::table('news')->paginate(15);
+
+        return view('news.show', ['news' => $news]);
     }
+
+    public function destroy($id){
+        $new = News::findOrFail($id)->delete();
+        return redirect()->back();
+    }
+
 }
+
+
