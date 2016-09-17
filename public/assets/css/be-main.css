@@ -5793,4 +5793,7 @@ img {
 .gallery__image {
   margin-bottom: 1em; }
 
+body:after {
+  display: none; }
+
 /*# sourceMappingURL=be-main.css.map */

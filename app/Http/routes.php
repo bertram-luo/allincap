@@ -27,6 +27,9 @@ Route::group(['middlewareGroups' => ['web']], function(){
 
     Route::auth();
 
+    Route::get('/admin', function(){
+        return redirect('/news');
+    });
     Route::get('/ueditor/process', 'UeditorController@index');
     Route::post('/ueditor/process', 'UeditorController@index');
     Route::get('/courses/welcome', 'CourseController@index');

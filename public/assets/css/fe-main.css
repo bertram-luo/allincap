@@ -821,6 +821,10 @@ background-size: cover;
   border: 1px solid #FFF;
   color: #FFF; }
 
+#news .list a {
+  text-decoration: none;
+  color: #FFF; }
+
 #contact {
   background-color: #7cba00;
   text-align: center;
