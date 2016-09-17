@@ -188,23 +188,15 @@
             dataType: 'json',
             processData: false,
             contentType: false,
-            sucess:function(data, textStatus, jqXHR){
-                console.log(data);
-                if (typeof data.error === 'undefined'){
-                    submitForm(event, data);
-                } else {
-                    console.log("Errors:" + data.error)
-                }
+            success:function(data){
+                console.log("success");
+                location.href="/news/show";
             },
             error: function(jqXHR, textStatus, errorThrown){
                 console.log('ERRORS:' + textStatus)
             }, 
             complete: function(data){
-                $("#save").val("save!");
-                $.each(data.responseJSON.files, function(key, value){
-                    console.log(value);
-                    //$("#result").append('<img src='+value+' height="300px"> </img>');
-                });
+                console.log("complete");
             }
         });
     }

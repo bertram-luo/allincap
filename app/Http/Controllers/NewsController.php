@@ -23,11 +23,10 @@ class NewsController extends Controller
         return view('news.create');
     }
     public function store(NewsRequest $request){
-        file_put_contents("newslog", "entering store");
         $news = News::create($request->all());
-        file_put_contents("newslog", json_encode($news));
         flash()->success("success", "your news has success create");
-        return redirect("/news/create");
+        echo json_encode(['success' => 'success']);
+        //return redirect("/news/create");
     }
     public function show($id){
         //$flyer = Flyer::locatedAt($zip, $street);

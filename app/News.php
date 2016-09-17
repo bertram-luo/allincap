@@ -14,6 +14,6 @@ class News extends Model
     ];
 
     public static function top(){
-        return DB::table('news')->orderBy('create_at')->take(10)->get();
+        return DB::table('news')->orderBy('created_at', 'desc')->take(10)->get();
     }
 }
