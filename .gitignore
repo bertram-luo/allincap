@@ -14,4 +14,6 @@ Homestead.json
 /public/photos/news/*
 /public/photos/facedetect/*
 /public/log
+/public/*log
 *.swp
+tags

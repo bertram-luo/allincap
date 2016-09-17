@@ -26,7 +26,7 @@ class TaskController extends Controller
       $this->validate($request, ['name' => 'required|max:255',]);
      
       $request->user()->tasks()->create(['name' => $request->name]);
-      //return redirect("/tasks");
+      return redirect("/tasks");
   }
   public function destroy(Request $request, Task $task){
     $this->authorize('destroy', $task);

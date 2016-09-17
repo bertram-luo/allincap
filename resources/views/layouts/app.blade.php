@@ -36,34 +36,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Face Demo</a>
+                    <a class="navbar-brand" href="/">Allin Cap</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav" >
-                            @if(isset($links))
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">courses</a>
-
-                            <ul class="dropdown-menu" role="menu">
-                                @foreach($links as $link)
-                                    <li class="divider"></li>
-                                    @foreach($link as $li)
-                                    <li class={{ $li['active'] }}><a href={{ $li['link']}}>{{ $li['name'] }}</a></li>
-                                    @endforeach
-                                @endforeach
-                            </ul>
-                        </li>
-                            @endif
-                        
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Flyers</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/flyers/home">flyers</a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                            </ul>
-                        </li>
                         <li>
                             <a href="/news/create" role="button">添加新闻</a>
                         </li>
@@ -80,7 +56,8 @@
                         <li><a href="/tasks">tasks</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                Hello, {{ Auth::user()->name }} <span class="caret"></span>
+                                <!--Hello, {{ Auth::user()->name }} <span class="caret"></span>-->
+                                Hello, Master <span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">

@@ -20,7 +20,14 @@
         {{ $new->title }}
         </td>
         <td style="position:relative" >
-            {!! link_to('Delete', '/news/'.$new->id, 'DELETE')!!}
+            <form action="{{ url('/news/'.$new->id) }}" method="POST">
+                    {!! csrf_field() !!}
+                    {!! method_field('DELETE') !!}
+                    <button type="submit" id="delete-task-{{ $new->id }}" class="btn btn-danger">
+                        <i class="fa fa-btn fa-trash"></i>Delete
+                    </button>
+            </form>
+
         </td>
     </tr>
     @endforeach
