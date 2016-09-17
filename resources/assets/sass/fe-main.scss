@@ -328,7 +328,7 @@ td,th {
 
 img {
     -ms-interpolation-mode: bicubic;
-//    border: 0;
+    //    border: 0;
     height: auto;
     max-width: 100%;
     vertical-align: middle
@@ -755,8 +755,8 @@ a {
 }
 
 /*#whoami{
-    background: url('/assets/images/whoami_normal.jpg') center center;
-    background-size: cover;
+background: url('/assets/images/whoami_normal.jpg') center center;
+background-size: cover;
 }*/
 
 #whoami > .content{
@@ -1121,6 +1121,7 @@ button.active{
     color: rgb(2, 20, 101);
 }
 
+
 #popup_pp {
     display: none;
     position: fixed;
@@ -1136,4 +1137,151 @@ button.active{
     margin: 0 auto
 }
 
+#popup_pp .wave_loading {
+    display: none
+}
+
+#popup_pp.loading .wave_loading {
+    display: block
+}
+
+#popup_pp.is_blog #go_to_blog {
+    display: block!important;
+    float: right;
+    line-height: 44px;
+    margin-right: 1em;
+    color: #273652
+}
+
+#popup_pp.is_blog #go_to_blog:hover {
+    color: #00bfff
+}
+
+#popup_pp .modal_box {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 44px;
+    background: #fff
+}
+
+#popup_pp .modal_box .modal-nav {
+    position: absolute;
+    top: 0;
+    height: 44px;
+    overflow: hidden;
+    width: 100%
+}
+
+#popup_pp .modal_box #close_pp {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-decoration: none;
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 2em
+}
+
+#popup_pp .modal_box #go_to_blog {
+    display: none
+}
+
+#popup_pp .modal_box .modal-body {
+    margin-top: 44px;
+    overflow-x: hidden
+}
+
+#popup_pp .modal_box .modal-body a {
+    color: #273652
+}
+
+#popup_pp .modal_box .modal-body h1 {
+    color: #00bfff;
+    font-size: 1.8em;
+    margin: 1em auto
+}
+
+#popup_pp .modal_box .modal-body h1 a {
+    cursor: default
+}
+
+#popup_pp .modal_box .modal-body h2,#popup_pp .modal_box .modal-body h3 {
+    color: #00bfff
+}
+
+#popup_pp .modal_box .modal-body .section {
+    width: auto;
+    padding-top: 0
+}
+
+#popup_pp .modal_box .modal-body .section .inner {
+    width: 100%
+}
+
+#popup_pp .modal_box .modal-body #profile_content p {
+    color: #1f2432
+}
+
+#popup_pp .modal_box .modal-body #post_content h1,#popup_pp .modal_box .modal-body #post_content h2,#popup_pp .modal_box .modal-body #post_content h3,#popup_pp .modal_box .modal-body #post_content h4,#popup_pp .modal_box .modal-body #post_content h5 {
+    text-align: left;
+    color: #000
+}
+
+#popup_pp .modal_box .modal-body #post_content .info {
+    margin-top: 1em
+}
+
+#popup_pp .modal_box .modal-body #post_content .avatar {
+    display: none
+}
+
+#popup_pp .modal_box .modal-body .info {
+    margin-top: 1em
+}
+
+#popup_pp .modal_box .modal-body .intro {
+    padding-bottom: 4em
+}
+
+#popup_pp .info {
+    font-size: 1.3em;
+    margin-bottom: 1em
+}
+
+#popup_pp .info .name {
+    font-weight: 700
+}
+
+#popup_pp .message_wrapper img {
+    display: block;
+    margin: 1em auto
+}
+
+#popup_pp .message_wrapper .info {
+    text-align: center
+}
+
+#popup_message {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    top: -100%;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4em;
+    font-style: italic;
+    transition: top 1s
+}
+
+#popup_message p {
+    margin: .4em
+}
+
+#popup_message.show {
+    top: 0;
+    transition: top 1s
+}
 

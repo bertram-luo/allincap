@@ -42,6 +42,12 @@ class NewsController extends Controller
         $new = News::findOrFail($id)->delete();
         return redirect()->back();
     }
+    public function detail($id){
+        file_put_contents("newslog", "entering deail");
+        $new = News::find($id);
+        file_put_contents("newslog", $new->content);
+        return $new->content;
+    }
 
 }
 

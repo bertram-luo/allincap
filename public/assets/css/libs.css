@@ -1159,6 +1159,31 @@ body:after {
     margin: 0 auto;
 }
 
+#popup_pp {
+    padding: 0
+}
+
+#popup_pp .modal_box {
+    height: 100%
+}
+
+#popup_pp .modal_box .modal-body {
+    padding: 1em 2em;
+    height: 100%
+}
+
+#popup_pp .info span {
+    display: block
+}
+
+#popup_pp .modal_box .modal-body iframe{
+    border: 0px;
+    margin: 0;
+    width: 100%;
+    height: 90%;
+}
+
+
 @media all and (max-width: 24em){
     #cases .flex-control-nav li{
         width: 40px;
@@ -1380,6 +1405,25 @@ body:after {
     #contact .wechat {
         margin-top: 0
     }
+
+    #popup_pp {
+        padding: 3% 10%
+    }
+
+    #popup_pp .modal_box .modal-body {
+        padding: 0 3em
+    }
+
+    #popup_pp.small .modal_box {
+        min-height: 400px;
+        max-height: 90%;
+        top: 50%;
+        -webkit-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        transform: translate(0,-50%)
+    }
+
+
 }
 
 @media all and (min-width: 60em){
@@ -1544,6 +1588,9 @@ body:after {
 
     body:after {
         content: "standard"
+    }
+    #popup_pp .modal_box {
+        width: 700px;
     }
 
 }

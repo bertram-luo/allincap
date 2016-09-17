@@ -46,6 +46,7 @@ Route::group(['middlewareGroups' => ['web']], function(){
     Route::get('flyers/home', 'FlyersController@index');
     Route::resource('flyers', 'FlyersController');
     Route::resource('news', 'NewsController');
+    Route::get('news/detail/{id}', 'NewsController@detail');
     Route::get('{zip}/{street}', 'FlyersController@show');
     //Route::post('{zip}/{street}/photos', ['as' => 'store_photo_path', 'uses' => 'FlyersController@addPhoto']);
     Route::post('{zip}/{street}/photos', ['as' => 'store_photo_path', 'uses' => 'PhotosController@store']);

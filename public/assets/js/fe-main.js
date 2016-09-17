@@ -123,9 +123,23 @@ $(document).ready(function(){
         })
     }
 
+    function l() {
+        $("html").addClass("modal").css("padding-right", v),
+        g.find(".modal-body").empty(),
+        g.addClass("loading").fadeIn("fast", function() {
+            g.focus()
+        });
+        var o = !1
+    }
 
 
-
+    function c() {
+        g.fadeOut("fast", function() {
+            g.removeClass("is_blog"),
+            g.find(".modal-body").empty()
+        }),
+        $("html").removeClass("modal").css("padding-right", 0)
+    }
 
 
 
@@ -192,11 +206,26 @@ modal_body = $("popup_pp .modal-body"),
 
 
 
+      $("#close_pp, #popup_pp").click(function(o) {
+          o.preventDefault(),
+          c()
+      }),
 
 
 
 
 
+      $("#news .news_list a").on("click", function(o) {
+          o.preventDefault();
+          var e = $(this).attr("href")
+          , n = window.location.pathname;
+      l(),
+      //g.find(".modal-body").load(e, function() {
+      //    g.removeClass("loading").addClass("is_blog")
+      //})
+      g.find(".modal-body").append("<iframe src="+e+"></iframe>");
+      g.removeClass("loading").addClass("is_blog");
+      }),
 
 
 

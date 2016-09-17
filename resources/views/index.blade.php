@@ -180,7 +180,7 @@
                 <ul class="news_list">
                     @foreach($news as $new)
                     <li>
-                    <div class="time" > {{ get_date($new->created_at) }} </div><div class="title"> {{$new->title}}</div>
+                    <div class="time" ><a href="/news/detail/{{$new->id}}"> {{ get_date($new->created_at) }} </a> </div><div class="title"> {{$new->title}}</div>
                     </li>
                     @endforeach
                 </ul>
@@ -231,4 +231,21 @@
         </div>
     </section>
 </div>
+
+<div id="popup_pp" class="loading">
+    <div class="modal_box">
+        <div class="modal-nav">
+            <a href="" id="close_pp">×</a>
+             <a id="go_to_blog" href="http://www.bluelakecap.com/?page_id=195">
+                            阅读更多新闻 
+            </a>
+        </div>
+
+        <div class="modal-body">
+
+        </div>
+
+    </div>
+</div>
+
 @endsection
