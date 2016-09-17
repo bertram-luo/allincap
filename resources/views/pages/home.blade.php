@@ -3,10 +3,10 @@
 <div class="container">
     <div class="jumbotron">
       <div class="container">
-<h1> Project Flyer </h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <h1>Allin Cap administraction Panel</h1>
+        <p>this is the backend administration page of Allin Cap</p>
         @if ($signedIn)
-        <a class="btn btn-primary" href="/flyers/create">Create a Flyer</a>
+        <a class="btn btn-primary" href="/news/create">Create a News</a>
         @else
         <a class="btn btn-primary" href="/atuh/register">Sign Up</a>
         @endif
