@@ -13,8 +13,7 @@ class NewsController extends Controller
     use AuthorizesUsers;
     public function __construct(){
         parent::__construct();
-        $this->middleware('auth', ['except' => 'show']);
-
+        $this->middleware('auth', ['except' => ['show', 'detail']]);
     }
     public function index(){
         return view('pages.home'); 
