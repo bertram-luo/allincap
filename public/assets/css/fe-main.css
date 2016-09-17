@@ -1006,7 +1006,8 @@ button.active {
 
 #popup_pp .modal_box .modal-body {
   margin-top: 44px;
-  overflow-x: hidden; }
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll; }
 
 #popup_pp .modal_box .modal-body a {
   color: #273652; }
