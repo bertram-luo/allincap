@@ -35,7 +35,6 @@
         <button onclick="getLocalData()" >获取草稿箱内容</button>
         <button onclick="clearLocalData()" >清空草稿箱</button>
     </div>
-
 </div>
 <div>
     <button onclick="createEditor()">
@@ -43,6 +42,7 @@
     <button onclick="deleteEditor()">
     删除编辑器</button>
 </div>
+<div> <button onclick="submitNews()" id="save">保存并发部署</button></div>
 </div>
     <script type="text/javascript" charset="utf-8" src="/assets/ueditor/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="/assets/ueditor/ueditor.all.min.js"> </script>
@@ -74,7 +74,6 @@
     }
     function getAllHtml() {
         alert(UE.getEditor('editor').getAllHtml())
-console.log(UE.getEditor('editor').getAllHtml());
     }
     function getContent() {
         var arr = [];
@@ -162,6 +161,47 @@ console.log(UE.getEditor('editor').getAllHtml());
         UE.getEditor('editor').execCommand( "clearlocaldata" );
         alert("已清空草稿箱")
     }
+
+    function submitNews(){
+        var content = UE.getEditor('editor').getAllHtml();
+        $("#save").val("saving!");
+        event.stopPropagation();
+        event.preventDefault();
+        var data = new FormData();
+        data.append("content", content);
+        $.ajax({
+            url: '/news',
+            beforeSend: function (request)
+            {
+                request.setRequestHeader("X-CSRF-TOKEN",$('input[name=_token]').val());
+            },
+            type: 'POST',
+            data: data,
+            cache: false,
+            dataType: 'json',
+            processData: false,
+            contentType: false,
+            sucess:function(data, textStatus, jqXHR){
+                console.log(data);
+                if (typeof data.error === 'undefined'){
+                    submitForm(event, data);
+                } else {
+                    console.log("Errors:" + data.error)
+                }
+            },
+            error: function(jqXHR, textStatus, errorThrown){
+                console.log('ERRORS:' + textStatus)
+            }, 
+            complete: function(data){
+                $("#save").val("save!");
+                $.each(data.responseJSON.files, function(key, value){
+                    console.log(value);
+                    //$("#result").append('<img src='+value+' height="300px"> </img>');
+                });
+            }
+        });
+    }
+
 </script>
     <!--<script type="text/javascript" charset="utf-8" src="/assets/js/csrf.config.js">-->
 @endsection

@@ -54,16 +54,7 @@
                             </ul>
                         </li>
                             @endif
-                        <li><a href="/facedetect">demo</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Charts</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/charts/lineChart">line chart</a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                            </ul>
-                        </li>
+                        
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Flyers</a>
                             <ul class="dropdown-menu">
@@ -72,15 +63,12 @@
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                             </ul>
-                            <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">R talk</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/designpatterns">design patters</a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                            </ul>
                         </li>
+                        <li>
+                            <a href="/news/create" role="button">添加新闻</a>
+                        </li>
+                        <li>
+                            <a href="/news/list" role="button">管理新闻</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">

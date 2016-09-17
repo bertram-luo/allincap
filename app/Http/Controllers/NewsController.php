@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\NewsRequest;
 use Illuminate\Http\Request;
-use App\Photo;
+use App\News;
 use App\Http\Controllers\Traits\AuthorizesUsers;
 
 class NewsController extends Controller
@@ -20,13 +21,15 @@ class NewsController extends Controller
     public function create(){
         return view('news.create');
     }
-    public function store(FlyerRequest $request){
-        $flyer = $this->user->publish(Flyer::create($request->all()));
-        flash()->success("success", "your flyer has success create");
-        return redirect(flyer_path($flyer));
+    public function store(NewsRequest $request){
+        file_put_contents("newslog", "entering store");
+        $news = News::create($request->all());
+        file_put_contents("newslog", json_encode($news));
+        flash()->success("success", "your news has success create");
+        return redirect("/news/create");
     }
-    public function show($zip, $street){
-        $flyer = Flyer::locatedAt($zip, $street);
-        return view("flyers.show", compact('flyer'));
+    public function show($id){
+        //$flyer = Flyer::locatedAt($zip, $street);
+        return view("news.show", compact('flyer'));
     }
 }
