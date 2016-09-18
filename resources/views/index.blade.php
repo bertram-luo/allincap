@@ -180,7 +180,7 @@
                 <ul class="news_list">
                     @foreach($news as $new)
                     <li>
-                    <div class="time" ><a href="/news/detail/{{$new->id}}"> {{ get_date($new->created_at) }} </a> </div><div class="title"> <a href="/news/detail/{{$new->id}}">{{$new->title}}</a></div>
+                    <div class="time" ><a href="/index/detail/{{$new->id}}"> {{ get_date($new->created_at) }} </a> </div><div class="title"> <a href="/index/detail/{{$new->id}}">{{$new->title}}</a></div>
                     </li>
                     @endforeach
                 </ul>

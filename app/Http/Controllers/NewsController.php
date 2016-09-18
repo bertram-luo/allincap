@@ -13,27 +13,26 @@ class NewsController extends Controller
     use AuthorizesUsers;
     public function __construct(){
         parent::__construct();
-        $this->middleware('auth', ['except' => ['show', 'detail']]);
+        $this->middleware('auth', ['except' => 'detail']);
     }
     public function index(){
         return view('pages.home'); 
     }
+
     public function create(){
         return view('news.create');
     }
+
     public function store(NewsRequest $request){
         $news = News::create($request->all());
         flash()->success("success", "your news has success create");
         echo json_encode(['success' => 'success']);
+        // redirect done by frontend
         //return redirect("/news/create");
     }
+
     public function show($id){
-        //$flyer = Flyer::locatedAt($zip, $street);
-        //
-        //
-
-        $news = DB::table('news')->paginate(15);
-
+        $news = DB::table('news')->select('id','created_at', 'title')->paginate(15);
         return view('news.show', ['news' => $news]);
     }
 
@@ -42,12 +41,9 @@ class NewsController extends Controller
         return redirect()->back();
     }
     public function detail($id){
-        file_put_contents("newslog", "entering deail");
         $new = News::find($id);
-        file_put_contents("newslog", $new->content);
         return $new->content;
     }
-
 }
 
 

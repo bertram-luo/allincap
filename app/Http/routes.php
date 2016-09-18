@@ -15,51 +15,38 @@
 
 
 Route::group(['middlewareGroups' => ['web']], function(){
-    Route::get('begin', function(){
-        Session::flash('status', 'Hello There');
-        return redirect('/');
-    });
+    /************************* start of project routes************************/
     Route::get('/', function(){
-          //return view('welcome');
         return redirect('/index');
     });
-
-
+    Route::get('/index', 'IndexController@index');
+    Route::get('/index/detail/{id}', 'IndexController@detail');
     Route::auth();
 
     Route::get('/admin', function(){
         return redirect('/news');
     });
-    Route::get('/ueditor/process', 'UeditorController@index');
-    Route::post('/ueditor/process', 'UeditorController@index');
-    Route::get('/courses/welcome', 'CourseController@index');
-    Route::get('/courses/lecture/{id}', 'CourseController@course');
 
-    Route::get('/home', 'HomeController@index');
-    Route::get('/index', 'IndexController@index');
-    Route::get('/slider', 'SliderController@index');
-    Route::get('/myslider', 'SliderController@myslider');
+    Route::resource('news', 'NewsController');
+
     Route::get('/tasks', 'TaskController@index');
     Route::post('/task', 'TaskController@store');
     Route::delete('/task/{task}', 'TaskController@destroy');
 
-    Route::get('/facedetect', 'FaceDetectController@index');
-    Route::post('/facedetect/process', 'FaceDetectController@process');
+    Route::get('/ueditor/process', 'UeditorController@index');
+    Route::post('/ueditor/process', 'UeditorController@index');
 
-    Route::get('flyers/home', 'FlyersController@index');
-    Route::resource('flyers', 'FlyersController');
-    Route::resource('news', 'NewsController');
-    Route::get('news/detail/{id}', 'NewsController@detail');
-    Route::get('{zip}/{street}', 'FlyersController@show');
-    //Route::post('{zip}/{street}/photos', ['as' => 'store_photo_path', 'uses' => 'FlyersController@addPhoto']);
-    Route::post('{zip}/{street}/photos', ['as' => 'store_photo_path', 'uses' => 'PhotosController@store']);
+    /************************* end of project routes************************/
+    // dummy for test
+    Route::get('/home', 'HomeController@index');
+    Route::get('/slider', 'SliderController@index');
+    Route::get('/myslider', 'SliderController@myslider');
 
-    Route::delete('photos/{id}', 'PhotosController@destroy');
-
-
-    Route::get('/designpatterns', function(){
-        return view("rshare.designpatterns");
+    // dummy legacy
+    Route::get('begin', function(){
+        Session::flash('status', 'Hello There');
+        return redirect('/');
     });
-
+    Route::delete('photos/{id}', 'PhotosController@destroy');
     Route::get('/about', 'PagesController@about');
 });

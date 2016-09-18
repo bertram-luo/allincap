@@ -15,7 +15,6 @@ class IndexController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('auth');
     }
 
     /**
@@ -25,7 +24,11 @@ class IndexController extends Controller
      */
     public function index()
     {
-        
-        return view('index', ['news' => News::top()]);
+        return view('index', ['news' => News::allBrief()]);
+    }
+
+    public function detail($id){
+        $new = News::find($id);
+        return $new->content;
     }
 }
