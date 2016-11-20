@@ -138,15 +138,15 @@
             <div class="inner">
             <div class="btn-center-container">
                 <div class="btn-group" id="case-swap">
-                    <button class="left active">智能科技</button>
-                    <button class="right">智能娱乐</button>
+                    <button class="aitech left active">智能科技</button>
+                    <button class="aientain right">智能娱乐</button>
                 </div>
             </div>
-            <div id="slider" class="flexslider">
+        <div id="aitechSlider" class="flexslider">
             <ul class="slides">
                 <li data-thumb="/assets/images/yuanqu.jpg">
                     <div class="wrapper">
-                        <img class="avatar" src="/assets/images/case1.jpg" alt="">
+                        <img class="avatar" src="/assets/images/yuanqu-product.jpg" alt="">
                         <div class="message_wrapper">
                             <!--<div class="name">Angela </div>-->
                             <!--<div class="company">xx科技</div>-->
@@ -183,12 +183,67 @@
                     </div>
                 </li>
 
-                <li data-thumb="/assets/images/case1-thumbnail.jpg">
+                <li data-thumb="/assets/images/case2-thumbnail.jpg">
+                    <div class="wrapper">
+                        <img class="avatar" src="/assets/images/case2-thumbnail.jpg" alt="">
+                        <div class="message_wrapper">
+                            <!--<div class="name">Angela </div>-->
+                            <!--<div class="company">xx科技</div>-->
+                            <p>
+苏州敏芯微电子技术有限公司成立于2007年，是国内最早的MEMS研发公司之一。管理团队具有深厚的半导体及MEMS产业背景，核心技术团队有多年在国内外顶尖大学从事MEMS与集成电路（IC）技术研究的经验。已申请和在申请专利累计已达70多项，拥有数项涉及MEMS关键技术的突破性发明和世界级科研成果。 敏芯微不仅填补了国内 MEMS 产业的空白，还将顺应世界半导体产业向中国转移的趋势，发展成为具有世界影响力的MEMS公司。 
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            </div>
+            <div id="aientainSlider" class="flexslider">
+            <ul class="slides">
+                <li data-thumb="/assets/images/yuanqu.jpg">
+                    <div class="wrapper">
+                        <img class="avatar" src="/assets/images/yuanqu-product.jpg" alt="">
+                        <div class="message_wrapper">
+                            <!--<div class="name">Angela </div>-->
+                            <!--<div class="company">xx科技</div>-->
+                            <p>
+test
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li data-thumb="/assets/images/case2-thumbnail.jpg">
                     <div class="wrapper">
                         <img class="avatar" src="/assets/images/case1.jpg" alt="">
                         <div class="message_wrapper">
-                            <div class="name">Angela </div>
-                            <div class="company">xx科技</div>
+                            <!--<div class="name">Angela </div>-->
+                            <!--<div class="company">xx科技</div>-->
+                            <p>
+曼恒数字是中国VR行业的杰出代表，新三板VR业务第一股，公司十年专注VR技术研发和积累，形成了行业应用和娱乐应用两个业务方向，是目前国内收入规模，市值，人数最大的VR企业。公司先后获得湖杉、软银赛富等几十家机构的投资，创始人同时担任中国文化娱乐行业协会虚拟现实专业委员会主任职务，公司及创始人在行业内有广泛的影响力。
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li data-thumb="/assets/images/case2-thumbnail.jpg">
+                    <div class="wrapper">
+                        <img class="avatar" src="/assets/images/case1.jpg" alt="">
+                        <div class="message_wrapper">
+                            <!--<div class="name">Angela </div>-->
+                            <!--<div class="company">xx科技</div>-->
+                            <p>
+昂华自动化是国内少有的可以提供工业4.0智能工厂完整解决方案的企业，公司集非标设备设计、加工、制造能力于一体，产品主要包括：机器人柔性系统、自动化装配设备、检测及测试设备、MES 系统、整线解决方案及智能工厂规划。产品广泛应用于汽车动力总成，汽车零
+部件，新能源汽车动力系统，飞机制造等领域，可以满足客户的各种差异化需求。昂华秉承“诚信、责任、专业、坚持”的价值观，致力于成为高端装配制造行业的领军企业。
+
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li data-thumb="/assets/images/case2-thumbnail.jpg">
+                    <div class="wrapper">
+                        <img class="avatar" src="/assets/images/case2-thumbnail.jpg" alt="">
+                        <div class="message_wrapper">
+                            <!--<div class="name">Angela </div>-->
+                            <!--<div class="company">xx科技</div>-->
                             <p>
 苏州敏芯微电子技术有限公司成立于2007年，是国内最早的MEMS研发公司之一。管理团队具有深厚的半导体及MEMS产业背景，核心技术团队有多年在国内外顶尖大学从事MEMS与集成电路（IC）技术研究的经验。已申请和在申请专利累计已达70多项，拥有数项涉及MEMS关键技术的突破性发明和世界级科研成果。 敏芯微不仅填补了国内 MEMS 产业的空白，还将顺应世界半导体产业向中国转移的趋势，发展成为具有世界影响力的MEMS公司。 
                             </p>

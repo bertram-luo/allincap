@@ -19,29 +19,6 @@ $(document).ready(function(){
         (o >= 0.5 * m  && o < m + $("#whoami").height()) ? $("header.change").addClass("white-logo") : $("header.change").removeClass("white-logo"),o >= (m + $("#whoami").height()) ? $("header.change").addClass("fixed") : $("header.change").removeClass("fixed");
     }
     function n(){
-       $("#slider.flexslider").flexslider({ 
-            animation: "slide",
-            controlNav: "thumbnails",
-            slideshowSpeed: 4e3,
-            pauseOnHover: !0,
-            start: function(){
-                $(".flex-control-thumbs li").first().addClass("active"),
-                $(".flex-active-slide").addClass("slide-active")
-                t()//TODO
-            },
-            before: function(){
-                $(".flex-control-thumbs li.active").removeClass("active");
-            },
-            after: function(){
-                $(".flex-control-thumbs img.flex-active").parent("li").addClass("active"),
-                $(".slide-active").removeClass("slide-active")
-                $(".flex-active-slide").addClass("slide-active")
-
-            }
-        });
-
-        $("#cases #slider .flex-viewport").before($("#cases #slider .flex-control-nav"));
-
        $("#newsSlider.flexslider").flexslider({ 
             animation: "slide",
         })
@@ -52,9 +29,8 @@ $(document).ready(function(){
             animation: "slide",
         })
     }
-    function i(){
-
-       $("#slider.flexslider").flexslider({ 
+    function caseSlider(){
+       $("#aitechSlider.flexslider").flexslider({ 
             animation: "slide",
             controlNav: "thumbnails",
             slideshowSpeed: 4e3,
@@ -75,7 +51,29 @@ $(document).ready(function(){
             }
         });
 
-       $("#cases #slider .flex-viewport").before($("#cases #slider .flex-control-nav"));
+        $("#aitechSlider .flex-viewport").before($("#aitechSlider .flex-control-nav"));
+       $("#aientainSlider.flexslider").flexslider({ 
+            animation: "slide",
+            controlNav: "thumbnails",
+            slideshowSpeed: 4e3,
+            pauseOnHover: !0,
+            start: function(){
+                $(".flex-control-thumbs li").first().addClass("active"),
+                $(".flex-active-slide").addClass("slide-active")
+                t()//TODO
+            },
+            before: function(){
+                $(".flex-control-thumbs li.active").removeClass("active");
+            },
+            after: function(){
+                $(".flex-control-thumbs img.flex-active").parent("li").addClass("active"),
+                $(".slide-active").removeClass("slide-active")
+                $(".flex-active-slide").addClass("slide-active")
+
+            }
+        });
+
+        $("#aientainSlider .flex-viewport").before($("#aientainSlider .flex-control-nav"));
     }
     function t(){
         $(".section").waypoint(function(o){
@@ -161,14 +159,18 @@ $(document).ready(function(){
     }
     function d(){
         o(),
-        $("body").removeClass("page_loading")
+        setTimeout(function(){
+            $("#aientainSlider.flexslider").css("display", "none")
+            $("body").removeClass("page_loading")
+        }, 500);
     }
     function f(){
         o(),
         $("body").hasClass("home"),
-
-
-        $("body").removeClass("page_loading")
+        setTimeout(function(){
+            $("#aientainSlider.flexslider").css("display", "none")
+            $("body").removeClass("page_loading")
+        }, 500);
     }
 
 
@@ -277,10 +279,19 @@ modal_body = $("popup_pp .modal-body"),
         })
     });
 
-    $("#case-swap button").on("click",function(){
+    $("#case-swap>button").on("click",function(){
+        if ($(this).hasClass("active")){
+            return;
+        }
         $(this).siblings().removeClass("active");
         $(this).addClass("active");
-
+        if ($(this).hasClass("aitech")){
+            $("#aientainSlider.flexslider").css("display", "none");
+            $("#aitechSlider.flexslider").css("display", "block");
+        } else {
+            $("#aitechSlider.flexslider").css("display", "none");
+            $("#aientainSlider.flexslider").css("display", "block");
+        }
     });
 
 
@@ -291,6 +302,7 @@ modal_body = $("popup_pp .modal-body"),
         context: "small",
         match: function(){
             setNav($(window).scrollTop()),
+            caseSlider(),
             a(),
             r(),
             n(),
@@ -304,7 +316,7 @@ modal_body = $("popup_pp .modal-body"),
         context: "standard",
         match: function(){
             setNav($(window).scrollTop()) ,
-            i(),
+            caseSlider(),
             a(),
             f()
         },
