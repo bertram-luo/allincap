@@ -650,7 +650,9 @@ background-size: cover;
 #whoami div#inner > p {
   color: #FFF;
   font-size: 36px;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  text-indent: 2em;
+  text-align: left; }
 
 #partners {
   background-color: #FFF; }
@@ -675,6 +677,9 @@ background-size: cover;
 
 #partners div.cols.wrapper {
   margin-bottom: 2em; }
+
+#partners div.cols.wrapper#large {
+  display: none; }
 
 #partners .team {
   margin-top: 2em;

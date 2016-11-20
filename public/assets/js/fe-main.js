@@ -277,12 +277,10 @@ modal_body = $("popup_pp .modal-body"),
         })
     });
 
-
-
-
-    $("#cases button").on("click",function(){
+    $("#case-swap button").on("click",function(){
         $(this).siblings().removeClass("active");
         $(this).addClass("active");
+
     });
 
 

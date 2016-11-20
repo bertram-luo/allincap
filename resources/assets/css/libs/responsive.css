@@ -268,6 +268,12 @@ body:after {
         width: 8em;
     }
 
+    #partners div#small{
+        display: block;
+    }
+    #partners div#large{
+        display: none;
+    }
 
     #partners .inner .hr{
         width: 100%;
@@ -356,6 +362,12 @@ body:after {
 
 @media all and (min-width: 48em) {
 
+    #partners  div#small{
+        display:none;
+    }
+    #partners div.cols.wrapper#large{
+        display: block;
+    }
 
     #partners .team ul {
         max-width: 100%

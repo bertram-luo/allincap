@@ -782,6 +782,8 @@ background-size: cover;
     color: #FFF;
     font-size: 36px;
     margin-bottom: 24px;
+    text-indent: 2em;
+    text-align: left;
 }
 
 #partners{
@@ -811,6 +813,10 @@ background-size: cover;
 
 #partners div.cols.wrapper{
     margin-bottom: 2em;
+}
+
+#partners div.cols.wrapper#large{
+    display: none;
 }
 
 #partners .team{
@@ -857,6 +863,7 @@ background-size: cover;
 #cases {
     background-color: rgb(2, 20, 101);
 }
+
 
 #body #cases > .content, #body #partners > .content {
     position: static;
