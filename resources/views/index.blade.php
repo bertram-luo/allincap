@@ -359,9 +359,16 @@
             <div class="list">
                 <h2>最新动态</h2>
                 <ul class="news_list">
+                    <li>
+                    <div class="time" ><a href="http://mp.weixin.qq.com/s?__biz=MjM5MjU4MjQ0MA==&mid=401483191&idx=1&sn=2e74ca9761447a5fd07a82fdb404f415&mpshare=1&scene=1&srcid=1127p15wI0sxUTJPY12m6psI#rd">2015-11-27</a> </div><div class="title"> <a href="http://mp.weixin.qq.com/s?__biz=MjM5MjU4MjQ0MA==&mid=401483191&idx=1&sn=2e74ca9761447a5fd07a82fdb404f415&mpshare=1&scene=1&srcid=1127p15wI0sxUTJPY12m6psI#rd">这条微信通往未来：智能硬件的机会与投资</a></div>
+                    </li>
+
+                    <li>
+                    <div class="time" ><a href="http://mp.weixin.qq.com/s?__biz=MjM5NjY1NTc0MQ==&mid=2653820541&idx=1&sn=58af2f0b511bbb4d8f142bd06b8c7ea1&chksm=bd3f516f8a48d879e982538722966bf17323b126a00ada34285aff4555134a3e1915f4687f96&mpshare=1&scene=1&srcid=11152hS1kkdPtb50nQxVnlxa#rd">2016-11-15</a> </div><div class="title"> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NjY1NTc0MQ==&mid=2653820541&idx=1&sn=58af2f0b511bbb4d8f142bd06b8c7ea1&chksm=bd3f516f8a48d879e982538722966bf17323b126a00ada34285aff4555134a3e1915f4687f96&mpshare=1&scene=1&srcid=11152hS1kkdPtb50nQxVnlxa#rd">未来已经到来，人工智能下一个独角兽在哪里？丨全球创业周天翼创投专场</a></div>
+                    </li>
                     @foreach($news as $new)
                     <li>
-                    <div class="time" ><a href="/index/detail/{{$new->id}}"> {{ get_date($new->created_at) }} </a> </div><div class="title"> <a href="/index/detail/{{$new->id}}">{{$new->title}}</a></div>
+                    <div class="time" ><a class="pop" href="/index/detail/{{$new->id}}"> {{ get_date($new->created_at) }} </a> </div><div class="title"> <a class="pop" href="/index/detail/{{$new->id}}">{{$new->title}}</a></div>
                     </li>
                     @endforeach
                 </ul>

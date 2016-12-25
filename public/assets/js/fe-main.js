@@ -225,7 +225,7 @@ $(document).ready(function(){
 
 
 
-      $("#news .news_list a").on("click", function(o) {
+      $("#news .news_list a.pop").on("click", function(o) {
           o.preventDefault();
           var e = $(this).attr("href")
           , n = window.location.pathname;
