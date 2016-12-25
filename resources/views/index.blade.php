@@ -7,7 +7,7 @@
         <div class="inner" style="">
             <img src="/assets/images/biglogo.png"></image>
         </div>
-        <div id="arrow" style="font-size: 18px;position:absolute; width: 100%; top:86%;"> <a href="#whoami">揭开奥银的面纱</a> </div>
+        <div id="arrow" style="font-size: 18px;position:absolute; width: 100%; top:86%;"> <a href="#whoami">揭开奥银湖杉的面纱</a> </div>
         <div class="bg-box">
             <div class="bg" src="/assets/images/hero_normal.jpg"> </div>
         </div>
@@ -30,26 +30,41 @@
                 <div class="team flexslider" id="investTeam">
                     <ul class="slides">
                         <li>
-                            <figure>
-                                <img src="/assets/images/team1-tall.jpg"> </img>
-                                <figcaption>
-                                <span class="name">苏仁宏</span>
-                                <span class="title">合伙人</span>
-                                </figcaption>
-                            </figure>
+                            <!--<div class="flip-container" ontouchstart="this.classList.toggle('hover')">-->
+                            <!--<div class="flipper">-->
+                                <!--<div class="front">-->
+                                    <figure>
+                                        <img src="/assets/images/surenhong.jpg"> </img>
+                                        <figcaption>
+                                        <span class="name">苏仁宏</span>
+                                        <span class="title">合伙人</span>
+                                        </figcaption>
+                                    </figure>
+                                    <p>
+奥银湖杉创始合伙人、全球著名半导体及电子产业链投资机构华登国际原合伙人，拥有11年电子及半导体产业技术及市场管理经验（华为、美国Semtech），7年投资经验，主导参与项目包括矽力杰（台湾上市）、大疆（无人机）、DFRobot、曼恒等，具有极丰富的产业链投资经验和深度广泛的产业资源。苏先生拥有通讯专业工学硕士学位、中欧EMBA。
+                                    </p>
+                                <!--</div>-->
+                                <!--<div class="back">-->
+<!--<p> 大帅逼大帅逼， 我是一个大帅比，咿呀咿呀呦</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
                         </li>
                         <li>
                             <figure>
-                                <img src="/assets/images/team2-tall.jpg"> </img>
+                                <img src="/assets/images/shenglei.jpg"> </img>
                                 <figcaption>
                                 <span class="name">盛 雷</span>
                                 <span class="title">合伙人</span>
                                 </figcaption>
                             </figure>
+                                <p>
+奥银湖杉创始合伙人，全球著名风险投资机构纪源资本（GGV Capital）原投资副总裁，长期关注技术驱动下的产业链投资机会，主要投资项目包括天智航、云洲智能、上海元趣、深之蓝、亮风台、小熊尼奥、中持水务、环美生态等，具有丰富的科技项目投资经验。盛雷先生还曾供职于第三方投资研究机构Pacific Epoch和荷兰银行（ABN AMRO）。盛雷先生拥有材料专业工学硕士学位。
+            </p>
                         </li>
                         <li>
                             <figure>
-                                <img src="/assets/images/team3-tall.jpg"> </img>
+                                <img src="/assets/images/lijun.jpg"> </img>
                                 <figcaption>
                                 <span class="name">李 斌</span>
                                 <span class="title">合伙人</span>
@@ -65,26 +80,50 @@
                 <div class="team flexslider" id="investTeam-large">
                     <ul class="slides">
                         <li>
-                            <figure>
-                                <img src="/assets/images/team1-tall.jpg"> </img>
-                                <figcaption>
-                                <span class="name">苏仁宏</span>
-                                <span class="title">合伙人</span>
-                                </figcaption>
-                            </figure>
+
+                            <!--<div class="flip-container" ontouchstart="this.classList.toggle('hover')">-->
+                            <!--<div class="flipper">-->
+                                <!--<div class="front">-->
+                                    <figure>
+                                        <img src="/assets/images/surenhong.jpg"> </img>
+                                        <figcaption>
+                                        <span class="name">苏仁宏</span>
+                                        <span class="title">合伙人</span>
+                                        </figcaption>
+                                    </figure>
+                                <!--</div>-->
+                                <!--<div class="back">-->
+<p>
+奥银湖杉创始合伙人、全球著名半导体及电子产业链投资机构华登国际原合伙人，拥有11年电子及半导体产业技术及市场管理经验（华为、美国Semtech），7年投资经验，主导参与项目包括矽力杰（台湾上市）、大疆（无人机）、DFRobot、曼恒等，具有极丰富的产业链投资经验和深度广泛的产业资源。苏先生拥有通讯专业工学硕士学位、中欧EMBA。
+</p>
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
+
+                            <!--<figure>-->
+                                <!--<img src="/assets/images/team1-tall.jpg"> </img>-->
+                                <!--<figcaption>-->
+                                <!--<span class="name">苏仁宏</span>-->
+                                <!--<span class="title">合伙人</span>-->
+                                <!--</figcaption>-->
+                            <!--</figure>-->
                         </li>
                         <li>
                             <figure>
-                                <img src="/assets/images/team2-tall.jpg"> </img>
+                                <img src="/assets/images/shenglei.jpg"> </img>
                                 <figcaption>
                                 <span class="name">盛 雷</span>
                                 <span class="title">合伙人</span>
                                 </figcaption>
                             </figure>
+                            <p>
+奥银湖杉创始合伙人，全球著名风险投资机构纪源资本（GGV Capital）原投资副总裁，长期关注技术驱动下的产业链投资机会，主要投资项目包括天智航、云洲智能、上海元趣、深之蓝、亮风台、小熊尼奥、中持水务、环美生态等，具有丰富的科技项目投资经验。盛雷先生还曾供职于第三方投资研究机构Pacific Epoch和荷兰银行（ABN AMRO）。盛雷先生拥有材料专业工学硕士学位。
+
+                            </p>
                         </li>
                         <li>
                             <figure>
-                                <img src="/assets/images/team3-tall.jpg"> </img>
+                                <img src="/assets/images/lijun.jpg"> </img>
                                 <figcaption>
                                 <span class="name">李 斌</span>
                                 <span class="title">合伙人</span>
@@ -144,108 +183,161 @@
             </div>
         <div id="aitechSlider" class="flexslider">
             <ul class="slides">
-                <li data-thumb="/assets/images/yuanqu.jpg">
+                <li data-thumb="/assets/images/yuanqu_.jpg">
                     <div class="wrapper">
-                        <img class="avatar" src="/assets/images/yuanqu-product.jpg" alt="">
+                        <img class="avatar" src="/assets/images/yuanqu.jpg" alt="">
                         <div class="message_wrapper">
                             <!--<div class="name">Angela </div>-->
-                            <!--<div class="company">xx科技</div>-->
+                            <div class="company">HOW ARE YOU</div>
                             <p>
-上海元趣由微软亚洲研究院的技术专家、科大讯飞元老级核心成员、也曾是中科大少年班的天才们创立，历时3年不仅将儿童领域的语音交互技术做到行业第一，更是全心为儿童打造了一款专属于他们的教育陪护机器人，让孩子们伴随黑科技带来的乐趣中成长。
+上海元趣信息技术有限公司由微软亚洲研究院的技术专家、科大讯飞元老级核心成员、也曾是中科大少年班的天才们创立，历时3年不仅将儿童领域的语音交互技术做到行业第一，更是全心为儿童打造了一款专属于他们的教育陪护机器人，让孩子们伴随黑科技带来的乐趣中成长。
                             </p>
                         </div>
                     </div>
                 </li>
-                <li data-thumb="/assets/images/case2-thumbnail.jpg">
+                <li data-thumb="/assets/images/gdi_.jpg">
                     <div class="wrapper">
-                        <img class="avatar" src="/assets/images/case1.jpg" alt="">
+                        <img class="avatar" src="/assets/images/gdi.jpg" alt="">
                         <div class="message_wrapper">
                             <!--<div class="name">Angela </div>-->
-                            <!--<div class="company">xx科技</div>-->
+                            <div class="company">曼恒数字</div>
                             <p>
-曼恒数字是中国VR行业的杰出代表，新三板VR业务第一股，公司十年专注VR技术研发和积累，形成了行业应用和娱乐应用两个业务方向，是目前国内收入规模，市值，人数最大的VR企业。公司先后获得湖杉、软银赛富等几十家机构的投资，创始人同时担任中国文化娱乐行业协会虚拟现实专业委员会主任职务，公司及创始人在行业内有广泛的影响力。
+上海曼恒数字是中国VR行业的杰出代表，新三板VR业务第一股，公司十年专注VR技术研发和积累，形成了行业应用和娱乐应用两个业务方向，是目前国内收入规模，市值，人数最大的VR企业。公司先后获得湖杉、软银赛富等几十家机构的投资，创始人同时担任中国文化娱乐行业协会虚拟现实专业委员会主任职务，公司及创始人在行业内有广泛的影响力。
                             </p>
                         </div>
                     </div>
                 </li>
-                <li data-thumb="/assets/images/case2-thumbnail.jpg">
+                <li data-thumb="/assets/images/anghua_.jpg">
                     <div class="wrapper">
-                        <img class="avatar" src="/assets/images/case1.jpg" alt="">
+                        <img class="avatar" src="/assets/images/anghua.jpg" alt="">
                         <div class="message_wrapper">
                             <!--<div class="name">Angela </div>-->
-                            <!--<div class="company">xx科技</div>-->
+                            <div class="company">昂华自动化</div>
                             <p>
-昂华自动化是国内少有的可以提供工业4.0智能工厂完整解决方案的企业，公司集非标设备设计、加工、制造能力于一体，产品主要包括：机器人柔性系统、自动化装配设备、检测及测试设备、MES 系统、整线解决方案及智能工厂规划。产品广泛应用于汽车动力总成，汽车零
-部件，新能源汽车动力系统，飞机制造等领域，可以满足客户的各种差异化需求。昂华秉承“诚信、责任、专业、坚持”的价值观，致力于成为高端装配制造行业的领军企业。
 
+昂华（上海）自动化工程股份有限公司是国内少有的可以提供工业4.0智能工厂完整解决方案的企业，公司集非标设备设计、加工、制造能力于一体，产品主要包括：机器人柔性系统、自动化装配设备、检测及测试设备、MES 系统、整线解决方案及智能工厂规划。产品广泛应用于汽车动力总成，汽车零部件，新能源汽车动力系统，飞机制造等领域，可以满足客户的各种差异化需求。昂华秉承“诚信、责任、专业、坚持”的价值观，致力于成为高端装配制造行业的领军企业。
                             </p>
                         </div>
                     </div>
                 </li>
 
-                <li data-thumb="/assets/images/case2-thumbnail.jpg">
+                <li data-thumb="/assets/images/minxin_.jpg">
                     <div class="wrapper">
-                        <img class="avatar" src="/assets/images/case2-thumbnail.jpg" alt="">
+                        <img class="avatar" src="/assets/images/minxin.jpg" alt="">
                         <div class="message_wrapper">
                             <!--<div class="name">Angela </div>-->
-                            <!--<div class="company">xx科技</div>-->
+                            <div class="company">敏芯微</div>
                             <p>
-苏州敏芯微电子技术有限公司成立于2007年，是国内最早的MEMS研发公司之一。管理团队具有深厚的半导体及MEMS产业背景，核心技术团队有多年在国内外顶尖大学从事MEMS与集成电路（IC）技术研究的经验。已申请和在申请专利累计已达70多项，拥有数项涉及MEMS关键技术的突破性发明和世界级科研成果。 敏芯微不仅填补了国内 MEMS 产业的空白，还将顺应世界半导体产业向中国转移的趋势，发展成为具有世界影响力的MEMS公司。 
+
+苏州敏芯微电子技术有限公司成立于2007年，是国内最早的MEMS研发公司之一。已申请和在申请专利累计已达70多项，拥有数项涉及MEMS关键技术的突破性发明和世界级科研成果。 敏芯微不仅填补了国内 MEMS 产业的空白，还将顺应世界半导体产业向中国转移的趋势，发展成为具有世界影响力的MEMS公司
                             </p>
                         </div>
+                    </div>
+                </li>
+                <li data-thumb="/assets/images/more.png">
+                    <div class="wrapper">
+                            <a href="" class="more_company show_pp">
+                                <img src="/assets/images/df_.jpg" alt="" draggable="false">
+                                    <div class="message_wrapper hidden">
+                                        <img class="avatar" src="/assets/images/df.jpg" alt="">
+                                        <div class="company">智位机器人</div>
+                                        <p>
+上海智位机器人股份有限公司 （DFRobot）是成立于2008年的全球领先的创客平台公司。公司组建了全国最大的创客社区平台。通过平台为全球120多个国家的创客，企业和学校提供了超过上千种创造所需的模组，产品和服务。为创造助力是公司的使命。
+
+                                        </p>
+                                    </div>
+                            </a>
+                            <a href="" class="more_company show_pp">
+                                <img src="/assets/images/eViewTek_.jpg" alt="">
+                                    <div class="message_wrapper hidden">
+                                        <img class="avatar" src="/assets/images/eViewTek.jpg" alt="">
+                                        <div class="company">点睛创视</div>
+                                        <p>
+深圳市点睛创视技术有限公司(eViewTek Technology Co. Ltd)专业从事光电显示技术、微型投影技术及光学器件的开发与生产。经过五年的积累与沉淀，已经成为微型投影光学引擎的核心供应商之一，并将继续与业内知名公司通力合作，共同推进微型投影在消费电子、移动商务、工业应用、穿戴显示和车载显示等领域的发展。
+</p>
+                                    </div>
+
+
+                            </a>
+                            <a href="" class="more_company show_pp">
+                                <img src="/assets/images/aisen_.jpg" alt="">
+
+                                    <div class="message_wrapper hidden">
+                                        <img class="avatar" src="/assets/images/aisen.jpg" alt="">
+                                        <div class="company">智位机器人</div>
+                                        <p>
+上海智位机器人股份有限公司 （DFRobot）是成立于2008年的全球领先的创客平台公司。公司组建了全国最大的创客社区平台。通过平台为全球120多个国家的创客，企业和学校提供了超过上千种创造所需的模组，产品和服务。为创造助力是公司的使命。
+
+                                        </p>
+                                    </div>
+
+                            </a>
                     </div>
                 </li>
             </ul>
             </div>
             <div id="aientainSlider" class="flexslider">
             <ul class="slides">
-                <li data-thumb="/assets/images/yuanqu.jpg">
+                <li data-thumb="/assets/images/maowang_.jpg">
                     <div class="wrapper">
-                        <img class="avatar" src="/assets/images/yuanqu-product.jpg" alt="">
+                        <img class="avatar" src="/assets/images/maowang.jpg" alt="">
                         <div class="message_wrapper">
                             <!--<div class="name">Angela </div>-->
-                            <!--<div class="company">xx科技</div>-->
+                            <div class="company">云动创想</div>
                             <p>
-test
+深圳市云动创想科技有限公司由著名“匠人”曾德钧创立，他是五次国际创新大奖获得者，专从音响行业几十年，在智能音响、收音机、有源音箱、数字功放等多项国家标准、行业标准里任组长、副组长或成员，业内技术专家。猫王收音机设计师。公司希望成为未来新“声活”方式的引领者。
                             </p>
                         </div>
                     </div>
                 </li>
-                <li data-thumb="/assets/images/case2-thumbnail.jpg">
+                <li data-thumb="/assets/images/xingzhe_.jpg">
                     <div class="wrapper">
-                        <img class="avatar" src="/assets/images/case1.jpg" alt="">
+                        <img class="avatar" src="/assets/images/xingzhe.jpg" alt="">
                         <div class="message_wrapper">
                             <!--<div class="name">Angela </div>-->
-                            <!--<div class="company">xx科技</div>-->
+                            <div class="company">行者</div>
                             <p>
-曼恒数字是中国VR行业的杰出代表，新三板VR业务第一股，公司十年专注VR技术研发和积累，形成了行业应用和娱乐应用两个业务方向，是目前国内收入规模，市值，人数最大的VR企业。公司先后获得湖杉、软银赛富等几十家机构的投资，创始人同时担任中国文化娱乐行业协会虚拟现实专业委员会主任职务，公司及创始人在行业内有广泛的影响力。
+“行者”是国内最大的骑行户外运动APP，垂直覆盖户外运动发烧友人群。目前行者占有骑行垂直领域超过半数的市场份额并拥有一大批忠实的粉丝用户，在核心技术、品牌文化等建立了较高壁垒。
                             </p>
                         </div>
                     </div>
                 </li>
-                <li data-thumb="/assets/images/case2-thumbnail.jpg">
+                <li data-thumb="/assets/images/leifeng_.jpg">
                     <div class="wrapper">
-                        <img class="avatar" src="/assets/images/case1.jpg" alt="">
+                        <img class="avatar" src="/assets/images/leifeng.jpg" alt="">
                         <div class="message_wrapper">
                             <!--<div class="name">Angela </div>-->
-                            <!--<div class="company">xx科技</div>-->
+                            <div class="company">雷锋网</div>
                             <p>
-昂华自动化是国内少有的可以提供工业4.0智能工厂完整解决方案的企业，公司集非标设备设计、加工、制造能力于一体，产品主要包括：机器人柔性系统、自动化装配设备、检测及测试设备、MES 系统、整线解决方案及智能工厂规划。产品广泛应用于汽车动力总成，汽车零
-部件，新能源汽车动力系统，飞机制造等领域，可以满足客户的各种差异化需求。昂华秉承“诚信、责任、专业、坚持”的价值观，致力于成为高端装配制造行业的领军企业。
+连接智能与未来，兴于中国智能硬件第一媒体，致力成为全球领先的科技媒体。
+雷锋网隶属于深圳英鹏信息技术有限公司，专注于移动互联网与智能硬件的未来，在新媒体业务上为读者提供移动互联网、硬件创业以及软硬件结合开发的第一手资讯与行业深度解读。
 
                             </p>
                         </div>
                     </div>
                 </li>
 
-                <li data-thumb="/assets/images/case2-thumbnail.jpg">
+                <li data-thumb="/assets/images/daqianyangguang_.jpg">
                     <div class="wrapper">
-                        <img class="avatar" src="/assets/images/case2-thumbnail.jpg" alt="">
+                        <img class="avatar" src="/assets/images/daqianyangguang.jpg" alt="">
                         <div class="message_wrapper">
                             <!--<div class="name">Angela </div>-->
-                            <!--<div class="company">xx科技</div>-->
+                            <div class="company">大千阳光</div>
                             <p>
-苏州敏芯微电子技术有限公司成立于2007年，是国内最早的MEMS研发公司之一。管理团队具有深厚的半导体及MEMS产业背景，核心技术团队有多年在国内外顶尖大学从事MEMS与集成电路（IC）技术研究的经验。已申请和在申请专利累计已达70多项，拥有数项涉及MEMS关键技术的突破性发明和世界级科研成果。 敏芯微不仅填补了国内 MEMS 产业的空白，还将顺应世界半导体产业向中国转移的趋势，发展成为具有世界影响力的MEMS公司。 
+中国领先的动漫影视IP开发与制作公司（代表作品：大圣归来）
+北京大千阳光数字科技股份有限公司，成立于2013年底，位于北京市中关村上地产业基地。核心团队产业经验15年以上，由资深制片人、导演、艺术家、研发、金融等各尖端人才组成。团队拥有极其丰富的项目操作经验，曾深度参与国内外诸多知名影视动画及游戏项目。
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li data-thumb="/assets/images/lexingren_.jpg">
+                    <div class="wrapper">
+                        <img class="avatar" src="/assets/images/lexingren.jpg" alt="">
+                        <div class="message_wrapper">
+                            <!--<div class="name">Angela </div>-->
+                            <div class="company">乐星人</div>
+                            <p>
+深圳行之赋格文化科技有限公司，拒绝单调！“乐星人”专注考、学、练的线上线下音乐教育和社群。来自耶鲁大学、朱莉亚音乐学院，以及腾讯、微软的团队，带你站在艺术与科技的交汇处，让音乐学习更简单更快乐！
                             </p>
                         </div>
                     </div>
@@ -302,9 +394,10 @@ test
                 <ul class="address">
                     <li>
                         <h3>上海</h3>
-                        <p>上海陆家嘴西路1号 中国银行大厦22楼1022室
+                        <p>上海市浦东新区新金桥路27号8号楼2层E室
+
 <br>
-                    邮编: 28820      电话：231-232342 
+ 邮编：201206    电话：021-58580886
 <br>
                     传真：231-232323 </p>
                     </li>

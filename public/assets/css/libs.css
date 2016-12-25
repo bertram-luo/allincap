@@ -1063,11 +1063,6 @@ header.mobile_open #main_nav ul{
     font-size: 1em;
 }
 
-
-#cases .message_wrapper {
-    padding-top: 1.5em;
-}
-
 #body #news .list{
     padding: 0 4%;
     font-size: 90%;
@@ -1152,11 +1147,21 @@ body:after {
     content: "small"
 }
 
+#cases .message_wrapper {
+    padding-top: 1.5em;
+}
+
 #cases .slides .wrapper img{
     margin-bottom: 1em;
     width: 180px;
     display: block;
     margin: 0 auto;
+}
+
+#cases .more_company{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
 }
 
 #popup_pp {
@@ -1186,8 +1191,8 @@ body:after {
 
 @media all and (max-width: 24em){
     #cases .flex-control-nav li{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         margin-right: 1em;
     }
 }
@@ -1221,6 +1226,10 @@ body:after {
         width: 180px;
     }
 
+    #partners .team li >p {
+        width: 180px;
+        margin: 0 auto;
+    }
     #partners .flex-viewport{
         overflow: visible !important;
     }

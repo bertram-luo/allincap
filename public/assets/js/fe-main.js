@@ -75,6 +75,7 @@ $(document).ready(function(){
 
         $("#aientainSlider .flex-viewport").before($("#aientainSlider .flex-control-nav"));
     }
+
     function t(){
         $(".section").waypoint(function(o){
             var e = this.element.id;
@@ -200,12 +201,19 @@ $(document).ready(function(){
     , m = $(window).height()
     , v = h()
     , g = $("#popup_pp");
-modal_body = $("popup_pp .modal-body"),
+    modal_body = $("#popup_pp .modal-body"),
     $(window).scroll(function(){
         var o = $(window).scrollTop();
         setNav(o);
     });
 
+    $(".more_company.show_pp").click(function(o){
+        o.preventDefault(),
+        l(),
+        g.removeClass("loading");
+        console.log($(this).find(".message_wrapper"));
+        $(this).find(".message_wrapper").clone().appendTo(modal_body).fadeIn(800);
+    });
 
 
       $("#close_pp, #popup_pp").click(function(o) {
