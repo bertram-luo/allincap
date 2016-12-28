@@ -1050,6 +1050,22 @@ header.mobile_open #main_nav ul{
 #hero .bg {
     background-image: url(/assets/images/hero_small.jpg);
 }
+#explanation .bg{
+    background-image: url(/assets/images/exp_small.jpeg);
+}
+
+#bar{
+    top: 15%;
+    padding: 1em;
+}
+#bar .large{
+    font-size: 18px;
+}
+
+#bar .footnote{
+    font-size: 10px;
+}
+
 
 /*#whoami{
     background-image: url('/assets/images/whoami_small.jpg');
@@ -1317,7 +1333,7 @@ body:after {
 
     #partners .team ul li {
         width: 32%;
-        padding: 0 4%;
+        padding: 0 3%;
     }
 
     #body #news .list{
@@ -1563,6 +1579,10 @@ body:after {
 
     #hero .bg {
         background-image: url("/assets/images/hero_normal.jpg");
+    }
+
+    #explanation .bg{
+        background-image: url("/assets/images/exp.jpeg");
     }
 
 
