@@ -388,7 +388,7 @@ body:after {
 @media all and (min-width: 48em) {
 
     #bar{
-        top: 50%;
+        top: 45%;
         padding: 2em;
     }
     #bar .large{
