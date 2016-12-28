@@ -132,6 +132,9 @@
                                 <span class="title">合伙人</span>
                                 </figcaption>
                             </figure>
+    <p>
+    奥银湖杉创始合伙人，奥飞娱乐副总裁、首席战略官。他对动漫文化产业链有极深刻的理解，他在奥飞娱乐投资的项目包括诺亦腾、乐相、广州数娱、快乐工场、牛卡娱乐等项目，领域覆盖文学动漫内容、IP平台、VR产业链、智能玩具、动漫游戏等泛娱乐生态。李斌先生拥有上海对外经贸大学硕士学位。
+    </p>
                         </li>
                     </ul>
                 </div>
@@ -386,7 +389,7 @@
             <div style="min-width: 20em"><h2>联系我们</h2></div>
             <div class="contact">
                 <figure  class="wechat">
-                    <img src="/assets/images/weixin.png" alt="">
+                    <img src="/assets/images/weixin.jpeg" alt="">
                     <figcaption>
                         <p>关注微信公众号</p>
                         <p>allincap</p>
