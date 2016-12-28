@@ -851,6 +851,7 @@ background-size: cover;
     background-color:#000;
     opacity:0.6;
     color:white;
+    font-size: 12px;
 }
 #partners figure .name{
     float:left;
@@ -1356,6 +1357,10 @@ button.active{
     transition: top 1s
 }
 
-
+#popup_pp .message_wrapper .company{
+    width: 6em;
+    display: block;
+    margin: 0 auto;
+}
 
 

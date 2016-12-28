@@ -37,11 +37,11 @@
                                         <img src="/assets/images/surenhong.jpg"> </img>
                                         <figcaption>
                                         <span class="name">苏仁宏</span>
-                                        <span class="title">合伙人</span>
+                                        <span class="title">创始合伙人 CEO</span>
                                         </figcaption>
                                     </figure>
                                     <p>
-奥银湖杉创始合伙人、全球著名半导体及电子产业链投资机构华登国际原合伙人，拥有11年电子及半导体产业技术及市场管理经验（华为、美国Semtech），7年投资经验，主导参与项目包括矽力杰（台湾上市）、大疆（无人机）、DFRobot、曼恒等，具有极丰富的产业链投资经验和深度广泛的产业资源。苏先生拥有通讯专业工学硕士学位、中欧EMBA。
+奥银湖杉创始合伙人 CEO、全球著名半导体及电子产业链投资机构华登国际原合伙人，拥有11年电子及半导体产业技术及市场管理经验（华为、美国Semtech），7年投资经验，主导参与项目包括矽力杰（台湾上市）、大疆（无人机）、DFRobot、曼恒等，具有极丰富的产业链投资经验和深度广泛的产业资源。苏先生拥有通讯专业工学硕士学位、中欧EMBA。
                                     </p>
                                 <!--</div>-->
                                 <!--<div class="back">-->
@@ -55,7 +55,7 @@
                                 <img src="/assets/images/shenglei.jpg"> </img>
                                 <figcaption>
                                 <span class="name">盛 雷</span>
-                                <span class="title">合伙人</span>
+                                <span class="title">创始合伙人</span>
                                 </figcaption>
                             </figure>
                                 <p>
@@ -67,7 +67,7 @@
                                 <img src="/assets/images/lijun.jpg"> </img>
                                 <figcaption>
                                 <span class="name">李 斌</span>
-                                <span class="title">合伙人</span>
+                                <span class="title">创始合伙人</span>
                                 </figcaption>
                             </figure>
 <p>
@@ -91,13 +91,13 @@
                                         <img src="/assets/images/surenhong.jpg"> </img>
                                         <figcaption>
                                         <span class="name">苏仁宏</span>
-                                        <span class="title">合伙人</span>
+                                        <span class="title">创始合伙人CEO</span>
                                         </figcaption>
                                     </figure>
                                 <!--</div>-->
                                 <!--<div class="back">-->
 <p>
-奥银湖杉创始合伙人、全球著名半导体及电子产业链投资机构华登国际原合伙人，拥有11年电子及半导体产业技术及市场管理经验（华为、美国Semtech），7年投资经验，主导参与项目包括矽力杰（台湾上市）、大疆（无人机）、DFRobot、曼恒等，具有极丰富的产业链投资经验和深度广泛的产业资源。苏先生拥有通讯专业工学硕士学位、中欧EMBA。
+奥银湖杉创始合伙人 CEO、全球著名半导体及电子产业链投资机构华登国际原合伙人，拥有11年电子及半导体产业技术及市场管理经验（华为、美国Semtech），7年投资经验，主导参与项目包括矽力杰（台湾上市）、大疆（无人机）、DFRobot、曼恒等，具有极丰富的产业链投资经验和深度广泛的产业资源。苏先生拥有通讯专业工学硕士学位、中欧EMBA。
 </p>
                                 <!--</div>-->
                             <!--</div>-->
@@ -116,7 +116,7 @@
                                 <img src="/assets/images/shenglei.jpg"> </img>
                                 <figcaption>
                                 <span class="name">盛 雷</span>
-                                <span class="title">合伙人</span>
+                                <span class="title">创始合伙人</span>
                                 </figcaption>
                             </figure>
                             <p>
@@ -129,7 +129,7 @@
                                 <img src="/assets/images/lijun.jpg"> </img>
                                 <figcaption>
                                 <span class="name">李 斌</span>
-                                <span class="title">合伙人</span>
+                                <span class="title">创始合伙人</span>
                                 </figcaption>
                             </figure>
     <p>
@@ -270,10 +270,11 @@
 
                                     <div class="message_wrapper hidden">
                                         <img class="avatar" src="/assets/images/aisen.jpg" alt="">
-                                        <div class="company">智位机器人</div>
+                                        <div class="company">
+艾森智能
+</div>
                                         <p>
-上海智位机器人股份有限公司 （DFRobot）是成立于2008年的全球领先的创客平台公司。公司组建了全国最大的创客社区平台。通过平台为全球120多个国家的创客，企业和学校提供了超过上千种创造所需的模组，产品和服务。为创造助力是公司的使命。
-
+深圳市艾森智能技术有限公司（AISenz Inc.) 团队曾履职于贝尔实验室（Bell Labs)、大疆创新等，拥有丰富的大数据存储及处理经验，专注于为行业物联网提供无线连接性、数据驱动的智能应用和解决方案（SaaS），服务于智能制造、智慧能源、智慧城市及智慧农业等领域。
                                         </p>
                                     </div>
 
