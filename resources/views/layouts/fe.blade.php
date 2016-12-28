@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=3, user-scalable=no">
-        <title>奥银资本 ALLIN Capital</title>
+        <title>奥银湖杉 ALLIN CAPITAL</title>
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">

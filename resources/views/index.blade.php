@@ -21,6 +21,23 @@
             </div>
         </div>
     </section>
+    <section id="explanation" class="section">
+        <div class="content">
+            <div class="inner" id="inner">
+          </div>
+        </div>
+
+        <div id="arrow" style=""> <a href="#whoami"></a> </div>
+        <div class="bg-box">
+            <div class="bg" src="/assets/images/exp.jpeg"> </div>
+        </div>
+        <div  id="bar" style="">
+            <p class="large">奥银湖杉</p>
+            <p class="footnote">ALLIN CAPITAL</p>
+            <p class="large">倾情全力 聚智成湖 泽杉成林</p>
+        </div>
+    </section>
+
     <section id="partners" class="section">
         <div class="content">
         <div class="inner">

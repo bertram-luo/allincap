@@ -16,7 +16,7 @@ $(document).ready(function(){
         
     }
     function setNav(o){
-        (o >= 0.5 * m  && o < m + $("#whoami").height()) ? $("header.change").addClass("white-logo") : $("header.change").removeClass("white-logo"),o >= (m + $("#whoami").height()) ? $("header.change").addClass("fixed") : $("header.change").removeClass("fixed");
+        (o >= 0.5 * m  && o < m + $("#whoami").height() + $("#explanation").height()) ? $("header.change").addClass("white-logo") : $("header.change").removeClass("white-logo"),o >= (m + $("#whoami").height() + $("#explanation").height()) ? $("header.change").addClass("fixed") : $("header.change").removeClass("fixed");
     }
     function n(){
        $("#newsSlider.flexslider").flexslider({ 
