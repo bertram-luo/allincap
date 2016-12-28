@@ -272,11 +272,11 @@ body:after {
 }
 
 
-@media all and (max-width: 24em){
+@media all and (max-width: 36em){
     #cases .flex-control-nav li{
-        width: 30px;
-        height: 30px;
-        margin-right: 1em;
+        width: 40px;
+        height: 40px;
+        margin-right: .5em;
     }
 }
 
