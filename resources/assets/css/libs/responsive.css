@@ -598,7 +598,7 @@ body:after {
     header #main_nav {
         position: static;
         float: right;
-        margin-right: 100px;
+        margin-right: 50px;
         display: block;
         background-color: transparent;
         width: auto

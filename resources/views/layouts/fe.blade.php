@@ -45,9 +45,9 @@
                     <li><a href="#contact">联系我们</a></li>
                 </ul>
             </nav>
-            <div class="lang">
-                <a href="">ENGLISH</a>
-            </div>
+            <!--<div class="lang">-->
+                <!--<a href="">ENGLISH</a>-->
+            <!--</div>-->
         </header>
 
         @yield('content')
