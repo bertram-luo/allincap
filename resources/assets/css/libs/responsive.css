@@ -387,6 +387,19 @@ body:after {
 
 @media all and (min-width: 48em) {
 
+    #bar{
+        top: 50%;
+        padding: 2em;
+    }
+    #bar .large{
+        font-size: 48px;
+    }
+
+    #bar .footnote{
+        font-size: 26px;
+    }
+
+
     #partners  div#small{
         display:none;
     }
