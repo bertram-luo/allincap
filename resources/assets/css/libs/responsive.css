@@ -246,11 +246,6 @@ body:after {
     margin: 0 auto;
 }
 
-#cases .more_company{
-    width: 80%;
-    margin: 0 auto;
-    display: block;
-}
 
 #popup_pp {
     padding: 0
@@ -284,6 +279,11 @@ body:after {
 
 @media all and (max-width: 48em){
 
+    #cases .more_company{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
     .btn-center-container{
         margin-bottom: 1em;
     }
