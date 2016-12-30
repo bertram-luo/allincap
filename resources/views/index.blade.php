@@ -5,6 +5,7 @@
     <section  id="hero" class="section">
         <div class="inner" style="">
             <img src="/assets/images/biglogo.png"></image>
+            <p id="exp">倾情全力 聚智成湖 泽杉成林</p>
         </div>
         <div class="arrow" style="font-size: 18px;position:absolute; width: 100%; top:86%;"> <a href="#whoami">揭开奥银湖杉的面纱</a> </div>
         <div class="bg-box">

@@ -118,6 +118,10 @@ header.mobile_open #main_nav ul{
     background-image: url(/assets/images/hero_small.jpg);
 }
 
+#hero #exp {
+    font-size: 1.2em;
+}
+
 #bar{
     top: 15%;
     padding: 1em;
@@ -135,6 +139,10 @@ header.mobile_open #main_nav ul{
     background-image: url('/assets/images/whoami_small.jpg');
 }*/
 
+section#whoami.inner, #whoami.section .inner{
+    padding-left: 12%;
+    padding-right: 12%;
+}
 #whoami div.inner > h1{
     font-size: 2.2em;
 }
@@ -485,9 +493,6 @@ body:after {
         background: url('/assets/images/whoami_normal.jpg') center center;
     }*/
 
-    #whoami > .content{
-        max-width: 960px;
-    }
 
     #contact {
         text-align: center;
@@ -528,6 +533,14 @@ body:after {
 
 @media all and (min-width: 60em){
 
+    section#whoami.inner, #whoami.section .inner{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #whoami > .content{
+        max-width: 960px;
+    }
     #cases .content{
         max-width: 960px;
     }
@@ -634,12 +647,14 @@ body:after {
         margin-right: 64px!important
     }
 
-
     #hero img {
         width: 240px;
         padding: 10px
     }
 
+    #hero #exp{
+        font-size: 2em;
+    }
     #hero .bg {
         background-image: url("/assets/images/hero_normal.jpg");
     }
@@ -741,6 +756,10 @@ body:after {
     #hero img {
         width: 280px;
         padding: 12px
+    }
+
+    #hero #exp{
+        font-size: 3em;
     }
     #whoami  div.inner > h1 {
         font-size: 60px;
