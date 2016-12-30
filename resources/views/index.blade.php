@@ -3,11 +3,10 @@
 @section('content')
 <div id="body" class="scrollable">
     <section  id="hero" class="section">
-
         <div class="inner" style="">
             <img src="/assets/images/biglogo.png"></image>
         </div>
-        <div id="arrow" style="font-size: 18px;position:absolute; width: 100%; top:86%;"> <a href="#whoami">揭开奥银湖杉的面纱</a> </div>
+        <div class="arrow" style="font-size: 18px;position:absolute; width: 100%; top:86%;"> <a href="#whoami">揭开奥银湖杉的面纱</a> </div>
         <div class="bg-box">
             <div class="bg" src="/assets/images/hero_normal.jpg"> </div>
         </div>
@@ -19,22 +18,6 @@
                 <p>奥飞娱乐（002292）是中国领先的泛娱乐集团，成立于1993年，2009年成为国内第一家动漫上市公司。现已实现IP产业全平台运营（动漫原创平台、动漫IP、IP衍生品、影视、游戏、VR／智能玩具等泛娱乐生态），致力新时代的东方迪斯尼。</p>
                 <p>奥银湖杉关注技术驱动下的智能产业升级所带来的投资机会，专注于半导体及电子产业链、人工智能、科技文化娱乐、科技金融等领域，挖掘早中期、整合中后期。</p>
             </div>
-        </div>
-    </section>
-    <section id="explanation" class="section">
-        <div class="content">
-            <div class="inner" id="inner">
-          </div>
-        </div>
-
-        <div id="arrow" style=""> <a href="#whoami"></a> </div>
-        <div class="bg-box">
-            <div class="bg" src="/assets/images/exp.jpeg"> </div>
-        </div>
-        <div  id="bar" style="">
-            <p class="large">奥银湖杉</p>
-            <p class="footnote">ALLIN CAPITAL</p>
-            <p class="large">倾情全力 聚智成湖 泽杉成林</p>
         </div>
     </section>
 
@@ -244,28 +227,28 @@
                     </div>
                 </li>
 
-                <li data-thumb="/assets/images/minxin_.jpg">
+                <li data-thumb="/assets/images/df_.jpg">
                     <div class="wrapper">
-                        <img class="avatar" src="/assets/images/minxin.jpg" alt="">
+                        <img class="avatar" src="/assets/images/df.jpg" alt="">
                         <div class="message_wrapper">
                             <!--<div class="name">Angela </div>-->
-                            <div class="company">敏芯微</div>
+                            <div class="company">智位机器人</div>
                             <p>
 
-苏州敏芯微电子技术有限公司成立于2007年，是国内最早的MEMS研发公司之一。已申请和在申请专利累计已达70多项，拥有数项涉及MEMS关键技术的突破性发明和世界级科研成果。 敏芯微不仅填补了国内 MEMS 产业的空白，还将顺应世界半导体产业向中国转移的趋势，发展成为具有世界影响力的MEMS公司
+上海智位机器人股份有限公司 （DFRobot）是成立于2008年的全球领先的创客平台公司。公司组建了全国最大的创客社区平台。通过平台为全球120多个国家的创客，企业和学校提供了超过上千种创造所需的模组，产品和服务。为创造助力是公司的使命。
                             </p>
                         </div>
                     </div>
                 </li>
-                <li data-thumb="/assets/images/more.png">
+                <li data-thumb="/assets/images/more_small.jpg">
                     <div class="wrapper">
                             <a href="" class="more_company show_pp">
-                                <img src="/assets/images/df_.jpg" alt="" draggable="false">
+                                <img src="/assets/images/minxin_.jpg" alt="" draggable="false">
                                     <div class="message_wrapper hidden">
                                         <img class="avatar" src="/assets/images/df.jpg" alt="">
-                                        <div class="company">智位机器人</div>
+                                        <div class="company">敏芯微</div>
                                         <p>
-上海智位机器人股份有限公司 （DFRobot）是成立于2008年的全球领先的创客平台公司。公司组建了全国最大的创客社区平台。通过平台为全球120多个国家的创客，企业和学校提供了超过上千种创造所需的模组，产品和服务。为创造助力是公司的使命。
+苏州敏芯微电子技术有限公司成立于2007年，是国内最早的MEMS研发公司之一。已申请和在申请专利累计已达70多项，拥有数项涉及MEMS关键技术的突破性发明和世界级科研成果。 敏芯微不仅填补了国内 MEMS 产业的空白，还将顺应世界半导体产业向中国转移的趋势，发展成为具有世界影响力的MEMS公司
 
                                         </p>
                                     </div>

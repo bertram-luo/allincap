@@ -700,7 +700,7 @@ a {
     padding: 9px;
 }
 
-#hero #arrow {
+#hero .arrow {
     top: 80%
 }
 
@@ -733,14 +733,18 @@ a {
     background-color: #FFF;
 }
 
-#arrow {
+.arrow {
     position: absolute;
     z-index: 998;
     width: 100%;
-    left: 0
+    top: 86%;
+    left: 0;
+    text-align: center;
 }
 
-#arrow a {
+.arrow a {
+    min-width: 9em;
+    display: inline-block;
     color: #fff;
     text-decoration: none;
     background: url(/assets/images/arrow_down.png) bottom center no-repeat;
@@ -750,7 +754,7 @@ a {
     animation: arrow_down 2s infinite
 }
 
-#arrow a:hover {
+.arrow a:hover {
     padding-bottom: 30px
 }
 
@@ -763,63 +767,26 @@ background-size: cover;
     max-width: 1200px;
 }
 
-#whoami  div#inner{
-    padding-left: 10%;
-    padding-right: 10%;
+section#whoami.inner, #whoami.section .inner{
+    padding-left: 12%;
+    padding-right: 12%;
     text-align: center;
     color: #FFF;
     text-shadow: 0px 1px 17.64px rgba(6, 0, 1, 0.996);
-
 }
 
-#whoami  div#inner > h1 {
+#whoami  div.inner > h1 {
     color: #FFF;
     font-size: 60px;
     margin-bottom:0;
 }
 
-#whoami  div#inner > p {
+#whoami  div.inner > p {
     color: #FFF;
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 24px;
     text-indent: 2em;
     text-align: left;
-}
-
-#explanation {
-    min-height: 100%;
-    position: relative;
-}
-
-#explanation .bg-box {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    overflow:hidden;
-    ////background: url("/assets/images/hero_normal.jpg") center center no-repeat;
-    //background-size: cover;
-    z-index: 0;
-}
-
-#explanation .bg {
-    position: relative;
-    top: -30px;
-    left: -30px;
-    width: calc(100% + 60px);
-    height: calc(100% + 60px) !important;
-    min-height: 100%;
-    background: url("/assets/images/exp.jpeg") center center no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
-
-
-#explanation p {
-    color: white;
-    font-size: 48px;
 }
 
 #partners{
@@ -831,6 +798,7 @@ background-size: cover;
 }
 
 #partners .inner h2{
+    line-height: 1.0;
     position: relative;
     z-index: 1000;
     background-color: #FFF;
@@ -842,7 +810,7 @@ background-size: cover;
 #partners .inner .hr{
     border-top: 1px solid #ccc;
     position: relative;
-    bottom: 1.3em;
+    bottom: 1.1em;
     width: 40%;
     margin: 0 auto 2em auto;
 }
