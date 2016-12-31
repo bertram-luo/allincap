@@ -423,6 +423,9 @@
     </section>
 </div>
 
+<section style="" id="footer">
+    <p>©Copyright 2017 Allin Capital</p>
+</section>
 <div id="popup_pp" class="loading">
     <div class="modal_box">
         <div class="modal-nav">

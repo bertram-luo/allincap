@@ -374,7 +374,6 @@ body,html {
 }
 
 #body {
-    padding-bottom: 44px;
     overflow: auto
 }
 
@@ -671,14 +670,25 @@ a {
 }
 
 #body section .inner, #body .section .inner{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     padding: 0 5%;
 }
 
+
+#body section#hero .inner{
+    position: absolute;
+    top: 36%;
+}
 #body section#hero > .content , #body section#whoami > .content{
+    transform: none;
     padding:0;
+}
+
+section#whoami.inner, #whoami.section .inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+#body section#whoami > .content{
+    display: table;
 }
 
 #hero {
@@ -1068,9 +1078,16 @@ section#whoami.inner, #whoami.section .inner{
     color: #FFF;
 }
 
+#body section#contact > .content, #body .section#contact > .content{
+    padding: 84px 0;
+    display:table;
+    vertical-align:middle;
+}
 #body #contact .inner{
-    left: 50%;
-    transform: translate(-50%, -50%);
+    //left: 50%;
+    //transform: translate(-50%, -50%);
+    display:table-cell;
+    vertical-align: middle;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -1090,6 +1107,10 @@ section#whoami.inner, #whoami.section .inner{
     margin-bottom: 1em;
 }
 
+#contact .inner{
+    max-width: 40em;
+}
+
 #contact p{
     margin-bottom: 0;
 }
@@ -1105,12 +1126,6 @@ section#whoami.inner, #whoami.section .inner{
     text-align: center;
 }
 
-#contact .contact figure{
-    vertical-align: bottom;
-    display: inline-block;
-    width: 47%;
-    margin-bottom: 1em;
-}
 #contact .contact figure img{
     display: block;
     width: 100px;
@@ -1387,4 +1402,19 @@ button.active{
 
 #bar .footnote{
     font-size: 26px;
+}
+
+#footer{
+    background-color: rgb(28, 29, 33);
+    text-align: center;
+    line-height:44px;
+    height: 44px;
+    color: #aaa;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+
+#footer p{
+    margin-bottom: 0;
 }

@@ -164,6 +164,7 @@ section#whoami.inner, #whoami.section .inner{
 #news .pic_list > .pic_item > .img_container{
     margin-top: 10px;
     margin-left: 10px;
+    margin-right: 1px;
     border: 1px solid #FFF;
 }
 
@@ -279,6 +280,10 @@ body:after {
 
 @media all and (max-width: 48em){
 
+    #contact .email {
+        margin-top: 4em;
+        margin-bottom: 1em;
+    }
     #cases .more_company{
         width: 80%;
         margin: 0 auto;
@@ -513,6 +518,13 @@ body:after {
         margin-top: 0
     }
 
+
+    #contact .contact figure{
+        vertical-align: bottom;
+        display: inline-block;
+        width: 47%;
+        margin-bottom: 1em;
+    }
     #popup_pp {
         padding: 3% 10%
     }
@@ -660,7 +672,7 @@ body:after {
     }
 
     #body .section#contact .content, #body .section#contact .inner{
-        max-width:800px;
+        max-width:600px;
         min-width: 40em;
     }
 
