@@ -1050,8 +1050,9 @@ header.mobile_open #main_nav ul{
 #hero .bg {
     background-image: url(/assets/images/hero_small.jpg);
 }
-#explanation .bg{
-    background-image: url(/assets/images/exp_small.jpeg);
+
+#hero #exp {
+    font-size: 1.2em;
 }
 
 #bar{
@@ -1071,11 +1072,15 @@ header.mobile_open #main_nav ul{
     background-image: url('/assets/images/whoami_small.jpg');
 }*/
 
-#whoami div#inner > h1{
+section#whoami.inner, #whoami.section .inner{
+    padding-left: 12%;
+    padding-right: 12%;
+}
+#whoami div.inner > h1{
     font-size: 2.2em;
 }
 
-#whoami div#inner > p{
+#whoami div.inner > p{
     font-size: 1em;
 }
 
@@ -1092,6 +1097,7 @@ header.mobile_open #main_nav ul{
 #news .pic_list > .pic_item > .img_container{
     margin-top: 10px;
     margin-left: 10px;
+    margin-right: 1px;
     border: 1px solid #FFF;
 }
 
@@ -1174,11 +1180,6 @@ body:after {
     margin: 0 auto;
 }
 
-#cases .more_company{
-    width: 80%;
-    margin: 0 auto;
-    display: block;
-}
 
 #popup_pp {
     padding: 0
@@ -1204,17 +1205,23 @@ body:after {
     height: 90%;
 }
 
-
-@media all and (max-width: 24em){
-    #cases .flex-control-nav li{
-        width: 30px;
-        height: 30px;
-        margin-right: 1em;
-    }
+#cases .flex-control-nav li{
+    width: 40px;
+    height: 40px;
+    margin-right: .5em;
 }
 
 @media all and (max-width: 48em){
 
+    #contact .email {
+        margin-top: 4em;
+        margin-bottom: 1em;
+    }
+    #cases .more_company{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
     .btn-center-container{
         margin-bottom: 1em;
     }
@@ -1231,7 +1238,6 @@ body:after {
 
     #partners .inner .hr{
         width: 100%;
-        margin: 0 auto;
     }
     #partners figure{
         width: 180px;
@@ -1291,22 +1297,14 @@ body:after {
         margin: 0;
     }
 
-    .flex-direction-nav .flex-prev {
-        opacity: 1;
-        left: 10px;
-    }
     .flex-direction-nav .flex-next {
         opacity: 1;
-        right: 10px;
+        right: -20px;
     }
 
     .flex-direction-nav .flex-prev {
         opacity: 1;
-        left: 10px;
-    }
-    .flex-direction-nav .flex-next {
-        opacity: 1;
-        right: 10px;
+        left: -20px;
     }
 
     #body #contact.section {
@@ -1319,6 +1317,19 @@ body:after {
 }
 
 @media all and (min-width: 48em) {
+
+    #bar{
+        top: 45%;
+        padding: 2em;
+    }
+    #bar .large{
+        font-size: 48px;
+    }
+
+    #bar .footnote{
+        font-size: 26px;
+    }
+
 
     #partners  div#small{
         display:none;
@@ -1420,9 +1431,6 @@ body:after {
         background: url('/assets/images/whoami_normal.jpg') center center;
     }*/
 
-    #whoami > .content{
-        max-width: 960px;
-    }
 
     #contact {
         text-align: center;
@@ -1443,6 +1451,13 @@ body:after {
         margin-top: 0
     }
 
+
+    #contact .contact figure{
+        vertical-align: bottom;
+        display: inline-block;
+        width: 47%;
+        margin-bottom: 1em;
+    }
     #popup_pp {
         padding: 3% 10%
     }
@@ -1459,12 +1474,18 @@ body:after {
         -ms-transform: translate(0,-50%);
         transform: translate(0,-50%)
     }
-
-
 }
 
 @media all and (min-width: 60em){
 
+    section#whoami.inner, #whoami.section .inner{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #whoami > .content{
+        max-width: 960px;
+    }
     #cases .content{
         max-width: 960px;
     }
@@ -1531,7 +1552,7 @@ body:after {
     header #main_nav {
         position: static;
         float: right;
-        margin-right: 100px;
+        margin-right: 50px;
         display: block;
         background-color: transparent;
         width: auto
@@ -1571,31 +1592,20 @@ body:after {
         margin-right: 64px!important
     }
 
-
     #hero img {
         width: 240px;
         padding: 10px
     }
 
+    #hero #exp{
+        font-size: 2em;
+    }
     #hero .bg {
         background-image: url("/assets/images/hero_normal.jpg");
     }
 
-    #explanation .bg{
-        background-image: url("/assets/images/exp.jpeg");
-    }
-
-
-    #whoami  div#inner > h1 {
-        font-size: 60px;
-    }
-
-    #whoami  div#inner > p {
-        font-size: 36px;
-    }
-
     #body .section#contact .content, #body .section#contact .inner{
-        max-width:800px;
+        max-width:600px;
         min-width: 40em;
     }
 
@@ -1636,6 +1646,18 @@ body:after {
 
 }
 
+@media all and (min-width: 60em){
+    section > .content, .section > .content{
+        max-width: 60em;
+    }
+    #whoami  div.inner > h1 {
+        font-size: 36px;
+    }
+    #whoami  div.inner > p {
+        font-size: 28px;
+    }
+}
+
 @media all and (min-width: 60em) and all and (-webkit-min-device-pixel-ratio:1.5),all and (min-width:60em) and all and (-min-device-pixel-ratio:1.5) {
     section > .content, .section > .content{
         padding-top: 3em;
@@ -1647,18 +1669,18 @@ body:after {
     }
 
     #cases .content{
-        max-width: 960px;
+        max-width: 60em;
     }
 
     #cases .flex-control-nav li{
        width: 120px;
         height: 120px;
     }
-
 }
 
-@media all and (min-width: 87em) {
+@media all and (min-width: 91em) {
     #body section > .content,#body .section > .content{
+        max-width: 75em;
         padding-top: 5em;
         padding-bottom: 5em;
     }
@@ -1668,7 +1690,7 @@ body:after {
         padding-bottom: 3em;
     }
     #body .section .content, #body section .content {
-        max-width: 70em;
+        max-width: 75em;
         margin: 0 auto
     }
 
@@ -1676,13 +1698,22 @@ body:after {
         max-width: 1200px;
     }
 
-
     #hero img {
         width: 280px;
         padding: 12px
     }
-}
 
+    #hero #exp{
+        font-size: 3em;
+    }
+    #whoami  div.inner > h1 {
+        font-size: 60px;
+    }
+
+    #whoami  div.inner > p {
+        font-size: 36px;
+    }
+}
 
 
 /*! Lity - v1.6.6 - 2016-04-22
