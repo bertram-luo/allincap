@@ -246,7 +246,7 @@
                             <a href="" class="more_company show_pp">
                                 <img src="/assets/images/minxin_.jpg" alt="" draggable="false">
                                     <div class="message_wrapper hidden">
-                                        <img class="avatar" src="/assets/images/df.jpg" alt="">
+                                        <img class="avatar" src="/assets/images/minxin.jpg" alt="">
                                         <div class="company">敏芯微</div>
                                         <p>
 苏州敏芯微电子技术有限公司成立于2007年，是国内最早的MEMS研发公司之一。已申请和在申请专利累计已达70多项，拥有数项涉及MEMS关键技术的突破性发明和世界级科研成果。 敏芯微不仅填补了国内 MEMS 产业的空白，还将顺应世界半导体产业向中国转移的趋势，发展成为具有世界影响力的MEMS公司
