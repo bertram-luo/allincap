@@ -75,6 +75,18 @@
 奥银湖杉创始合伙人，奥飞娱乐副总裁、首席战略官。他对动漫文化产业链有极深刻的理解，他在奥飞娱乐投资的项目包括诺亦腾、乐相、广州数娱、快乐工场、牛卡娱乐等项目，领域覆盖文学动漫内容、IP平台、VR产业链、智能玩具、动漫游戏等泛娱乐生态。李斌先生拥有上海对外经贸大学硕士学位。
 </p>
                         </li>
+                        <li>
+                            <figure>
+                                <img src="/assets/images/zhangbo.jpg"> </img>
+                                <figcaption>
+                                <span class="name">张 博</span>
+                                <span class="title">投资总监</span>
+                                </figcaption>
+                            </figure>
+<p>
+张博，奥银湖杉投资总监，拥有十余年硬件研发、战略和投资工作经验。加入澳银湖杉之前，张博先生在知名无人机公司Yuneec任战略投资部经理，负责无人机相关智能技术领域的投资及战略合作拓展；在此之前，他还曾供职于苏州高新创投和霍尼韦尔(Honeywell),负责投资和战略市场工作。张博先生毕业于上海交通大学，有用工商管理硕士学位和电子信息工程学士学位。
+</p>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -137,6 +149,19 @@
     奥银湖杉创始合伙人，奥飞娱乐副总裁、首席战略官。他对动漫文化产业链有极深刻的理解，他在奥飞娱乐投资的项目包括诺亦腾、乐相、广州数娱、快乐工场、牛卡娱乐等项目，领域覆盖文学动漫内容、IP平台、VR产业链、智能玩具、动漫游戏等泛娱乐生态。李斌先生拥有上海对外经贸大学硕士学位。
     </p>
                         </li>
+			<li>
+                            <figure>
+                                <img src="/assets/images/zhangbo.jpg"> </img>
+                                <figcaption>
+                                <span class="name">张 博</span>
+                                <span class="title">投资总监</span>
+                                </figcaption>
+                            </figure>
+<p>
+张博，奥银湖杉投资总监，拥有十余年硬件研发、战略和投资工作经验。加入澳银湖杉之前，张博先生在知名无人机公司Yuneec任战略投资部经理，负责无人机相关智能技术领域的投资及战略合作拓展；在此之前，他还曾供职于苏州高新创投和霍尼韦尔(Honeywell),负责投资和战略市场工作。张博先生毕业于上海交通大学，有用工商管理硕士学位和电子信息工程学士学位。
+</p>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -249,7 +274,7 @@
                                         <img class="avatar" src="/assets/images/minxin.jpg" alt="">
                                         <div class="company">敏芯微</div>
                                         <p>
-苏州敏芯微电子技术有限公司成立于2007年，是国内最早的MEMS研发公司之一。已申请和在申请专利累计已达70多项，拥有数项涉及MEMS关键技术的突破性发明和世界级科研成果。 敏芯微不仅填补了国内 MEMS 产业的空白，还将顺应世界半导体产业向中国转移的趋势，发展成为具有世界影响力的MEMS公司
+苏州敏芯微电子技术有限公司成立于2007年，是国内最早的MEMS研发公司之一。已申请和在申请专利累计已达70多项，拥有数项涉及MEMS关键技术的突破性发明和世界级科研成果。 敏芯微不仅填补了国内 MEMS 产业的空白，还将顺应世界半导体产业向中国转移的趋势，发展成为具有世界影响力的MEMS公司。
 
                                         </p>
                                     </div>
@@ -359,14 +384,30 @@
     <div class="content">
             <div class="pics flexslider" id="newsSlider">
                 <ul class="pic_list slides">
-                    <li class="pic_item"><div class="img_container"><img src="/assets/images/news1.jpg">  </img></div></li>
-                    <li class="pic_item"><div class="img_container"><img src="/assets/images/news2.jpg">  </img></div></li>
-                    <li class="pic_item"><div class="img_container"><img src="/assets/images/news3.jpg">  </img></div></li>
+                    <li class="pic_item"><div class="img_container"><img src="/assets/images/news11.jpg">  </img></div></li>
+                    <li class="pic_item"><div class="img_container"><img src="/assets/images/news22.jpg">  </img></div></li>
+                    <li class="pic_item"><div class="img_container"><img src="/assets/images/news33.jpg">  </img></div></li>
                 </ul>
             </div>
             <div class="list">
                 <h2>最新动态</h2>
                 <ul class="news_list">
+		    <li>
+                    <div class="time" ><a href="http://mp.weixin.qq.com/s/pbnfGPWTlu-LJJaWfPYnBA">2017-02-09</a> </div><div class="title"> <a href="http://mp.weixin.qq.com/s/pbnfGPWTlu-LJJaWfPYnBA">行者无疆：共享骑行探索之路| 奥银湖杉思享会分享系列之四 </a></div>
+                    </li>
+		    <li>
+                    <div class="time" ><a href="http://mp.weixin.qq.com/s/jsIUClx6UiG1xuUNSeiOJA">2017-02-05</a> </div><div class="title"> <a href="http://mp.weixin.qq.com/s/jsIUClx6UiG1xuUNSeiOJA">新能源汽车行业是“蒙眼狂奔”还是务实赚钱？| 奥银湖杉思享会分享系列之三 </a></div>
+                    </li>
+		    <li>
+                    <div class="time" ><a href="http://mp.weixin.qq.com/s/ojTWA4xABGJ0a37JbwQhrg">2017-01-26</a> </div><div class="title"> <a href="http://mp.weixin.qq.com/s/ojTWA4xABGJ0a37JbwQhrg">奥银湖杉思享会分享系列之二：VR领域哪儿水深 </a></div>
+                    </li>
+		    <li>
+                    <div class="time" ><a href="http://mp.weixin.qq.com/s/q-92MTPeP2s-FKozsAxJ9A">2017-01-25</a> </div><div class="title"> <a href="http://mp.weixin.qq.com/s/q-92MTPeP2s-FKozsAxJ9A">奥银湖杉思享会分享系列之一：从匠人精神到猫王科技文化品牌</a></div>
+                    </li>
+		    <li>
+                    <div class="time" ><a href="http://mp.weixin.qq.com/s/00hs4OBfVVusUQ2a1WvY3A">2017-01-21</a> </div><div class="title"> <a href="http://mp.weixin.qq.com/s/00hs4OBfVVusUQ2a1WvY3A">ALLIN CAPITAL开业啦！ </a></div>
+                    </li>
+
                     <li>
                     <div class="time" ><a href="http://mp.weixin.qq.com/s?__biz=MjM5MjU4MjQ0MA==&mid=401483191&idx=1&sn=2e74ca9761447a5fd07a82fdb404f415&mpshare=1&scene=1&srcid=1127p15wI0sxUTJPY12m6psI#rd">2015-11-27</a> </div><div class="title"> <a href="http://mp.weixin.qq.com/s?__biz=MjM5MjU4MjQ0MA==&mid=401483191&idx=1&sn=2e74ca9761447a5fd07a82fdb404f415&mpshare=1&scene=1&srcid=1127p15wI0sxUTJPY12m6psI#rd">这条微信通往未来：智能硬件的机会与投资</a></div>
                     </li>
